@@ -1,27 +1,99 @@
 body {
+  background-color: rgb(241, 241, 241);
   font-family: Arial, sans-serif;
   font-size: 14px;
   margin: 0px auto;
-  width: 960px;
+  min-width: 850px;
+  width: 100%;
 }
 
 h1 {
   font-family: 'Rye', cursive;
-  font-size: 3em;
-  width: 300px;
+  font-size: 2em;
   float: left;
   line-height: 50px;
 }
+
+h2 {
+  background-color: rgb(60, 60, 60);
+  color: #FFF;
+  font-family: 'Cherry Swash', cursive;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 2em;
+  margin: 0 0 0.5em 0;
+  text-align: center;
+}
+
+#header {
+  background-color: #009D92;
+  color: #FFEECC;
+  left: 0;
+  padding: 10px;
+  /*position: fixed;*/
+  top: 0;
+}
+
+.nav {
+  float: left;
+  margin-left: 50px;
+}
+
 .nav li {
   float: left;
-  line-height: 100px;
+  line-height: 50px;
 }
 
 .nav li a {
-  padding: 1em;
+  color: #fff;
   margin: 1em;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.nav li a:hover {
+  background-color: white;
+  color: #009D92;
 }
 
-#main {
+#main div {
+  /*padding-top: 70px;*/
+  margin-bottom: 1em;
+}
+
+#famous {
+}
+
+#famous li {
+  background-color: white;
+  float: left;
+  height: 250px;
+  margin: 1%;
+  /*margin: 10px;*/
+  /*max-width: 250px;*/
+  /*min-width: 150px;*/
+  /*padding: 50px;*/
+  padding: 2%;
+  width: 25%;
+}
+
+#organizations {
+  clear: both;
+  height: 500px;
+}
+
+#gdi {
+  height: 500px;
+}
+
+#footer {
+  background-color: #1D766F;
+  height: 100px;
+}
+
+
+/* clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
   clear: both;
 }
