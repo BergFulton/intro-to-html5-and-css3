@@ -15,7 +15,7 @@
 body {
   background-color: rgb(241, 241, 241);
   font-family: 'Lato', Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.2em;
   margin: 0px auto;
@@ -23,9 +23,21 @@ body {
   width: 100%;
 }
 
+p {
+  margin: 1em;
+}
+
+a {
+  color: #1D766F;
+  text-decoration: none;
+}
+a:hover {
+  color: #BC2F36;
+}
+
 h1 {
   font-family: 'Audiowide', cursive;
-  font-size: 2.3em;
+  font-size: 2.2em;
   float: left;
   line-height: 75px;
 }
@@ -34,7 +46,7 @@ h2 {
   background-color: rgb(60, 60, 60);
   color: #FFF;
   font-family: 'Quicksand', sans-serif;
-  font-size: 2.5em;
+  font-size: 2.4em;
   font-weight: 400;
   line-height: 80px;
   margin: 0 0 0.5em 0;
@@ -43,7 +55,7 @@ h2 {
 
 h3 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 700;
   margin: 0 0 0.3em 0;
   text-align: center;
@@ -51,7 +63,7 @@ h3 {
 
 h4 {
   color: rgb(120, 120, 120);
-  font-size: 1.1em;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -102,7 +114,7 @@ h4 {
 }
 #header .nav {
   float: right;
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-left: 20px;
 }
 #header .nav li {
@@ -148,28 +160,49 @@ h4 {
   height: 100%;
 }
 
-#famous h3 a {
-  color: #000;
-  text-decoration: none;
-}
-#famous h3 a:hover {
-  color: #FB000D;
-}
-
-
 /* Organizations */
 #organizations {
   clear: both;
   height: 500px;
 }
 
+#organizations ul {
+  margin: 50px;
+  position: relative;
+}
+#organizations ul li {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+  padding-left: 5px;
+  max-width: 50%;
+}
+#organizations ul li:before {
+  color: #FB000D;
+  content: '6';
+  font-family: 'EntypoRegular';
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+#organizations img {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  display: none;
+  max-width: 40%;
+}
+#organizations li:hover img {
+  display: block;
+}
+
 
 /* Fun Facts */
 #facts ul {
-  margin: 50px 100px;
+  margin: 50px;
 }
 #facts ul li {
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.3em;
   margin-bottom: 1em;
   padding-left: 5px;
