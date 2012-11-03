@@ -1,32 +1,51 @@
+/* Fonts */
+@font-face {
+  font-family: 'EntypoRegular';
+  src: url('font/Entypo-webfont.eot');
+  src: url('font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/Entypo-webfont.woff') format('woff'),
+       url('font/Entypo-webfont.ttf') format('truetype'),
+       url('font/Entypo-webfont.svg#EntypoRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* General Styles */
 body {
   background-color: rgb(241, 241, 241);
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.2em;
   margin: 0px auto;
-  min-width: 850px;
+  min-width: 960px;
   width: 100%;
 }
 
 h1 {
-  font-family: 'Rye', cursive;
-  font-size: 2em;
+  font-family: 'Audiowide', cursive;
+  font-size: 2.3em;
   float: left;
-  line-height: 50px;
+  line-height: 75px;
 }
 
 h2 {
   background-color: rgb(60, 60, 60);
   color: #FFF;
-  font-family: 'Cherry Swash', cursive;
+  font-family: 'Quicksand', sans-serif;
   font-size: 2.5em;
-  font-weight: 700;
-  line-height: 2em;
+  font-weight: 400;
+  line-height: 80px;
   margin: 0 0 0.5em 0;
   text-align: center;
 }
 
 h3 {
-  font-size: 2em;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0 0 0.3em 0;
   text-align: center;
 }
 
@@ -36,81 +55,151 @@ h4 {
   text-align: center;
 }
 
-#header {
-  background-color: #009D92;
-  color: #FFEECC;
-  left: 0;
-  padding: 10px;
-  /*position: fixed;*/
-  top: 0;
-}
 
-.nav {
-  float: left;
-  margin-left: 50px;
-}
-
+/* Navigation */
 .nav li {
   float: left;
-  line-height: 50px;
 }
-
 .nav li a {
   color: #fff;
-  margin: 1em;
+  margin: 0 10px;
   padding: 5px 10px;
   text-decoration: none;
 }
 .nav li a:hover {
-  background-color: white;
-  color: #009D92;
+  color: #FB000D;
 }
 
+.jump {
+  color: #565656;
+  font-family: 'EntypoRegular';
+  font-size: 70px;
+  line-height: 80px;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+}
+.jump.up {
+  left: 15px;
+}
+.jump.down {
+  right: 15px;
+}
+.jump:hover {
+  color: #BC2F36;
+}
+
+
+/* Header */
+#header {
+  background-color: #009D92;
+  padding: 10px;
+}
+#header h1 {
+  color: #FFEECC;
+  background: url('../images/icons/it.png') no-repeat 0 50%;
+  padding-left: 40px;
+}
+#header .nav {
+  float: right;
+  font-size: 1.3em;
+  margin-left: 20px;
+}
+#header .nav li {
+  line-height: 75px;
+}
+#header .nav a:hover {
+  background-color: #fff;
+}
+
+#header:after {
+  /* clearfix hack */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Main */
 #main div {
-  /*padding-top: 70px;*/
   margin-bottom: 1em;
+  position: relative;
 }
 
-#famous {
-}
 
+/* Famous Women */
 #famous li {
   background-color: white;
   float: left;
   min-height: 250px;
   margin: 1%;
-  /*margin: 10px;*/
-  /*max-width: 250px;*/
-  /*min-width: 150px;*/
-  /*padding: 50px;*/
   padding: 2%;
-  width: 25%;
+  width: 27.33%;
+}
+
+#famous li.break {
+  clear: both;
 }
 
 #famous li img {
   display: block;
   margin: 1em auto;
-  max-width: 100%;
-  max-height: 250px;
+  width: 100%;
+  height: 100%;
 }
 
+#famous h3 a {
+  color: #000;
+  text-decoration: none;
+}
+#famous h3 a:hover {
+  color: #FB000D;
+}
+
+
+/* Organizations */
 #organizations {
   clear: both;
   height: 500px;
 }
 
-#gdi {
-  height: 500px;
+
+/* Fun Facts */
+#facts ul {
+  margin: 50px 100px;
+}
+#facts ul li {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+  padding-left: 5px;
+}
+#facts ul li:before {
+  color: #FFA700;
+  content: '7';
+  font-family: 'EntypoRegular';
+  font-size: 30px;
+  padding-right: 10px;
 }
 
+
+/* Footer */
 #footer {
-  background-color: #1D766F;
-  height: 100px;
+  background-color: #00665F;
 }
 
+#footer .nav {
+  float: left;
+  font-size: 1.1em;
+  margin: 10px;
+}
 
-/* clearfix */
-.clearfix:after {
+#footer .nav a:hover {
+  color: #FFEECC;
+}
+
+#footer:after {
+  /* clearfix hack */
   content: "";
   display: table;
   clear: both;
