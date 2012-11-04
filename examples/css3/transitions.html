@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rgba colors & opacity</title>
+    <style>
+div {
+  font-family: sans-serif;
+}
+
+#example1 {
+  float: left;
+  line-height: 100px;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+
+  background-color: red;
+  -webkit-transition: background-color 1s;
+}
+#example1:hover {
+  background-color: blue;
+}
+
+#example2 {
+  clear: both;
+  width: 500px;
+  padding: 20px;
+  border: solid 1px black;
+}
+#example2 div {
+  height: 20px;
+  line-height: 20px;
+  text-align: right;
+  width: 100px;
+  background-color: red;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 3s;
+}
+#example2:hover div {
+  width: 90%;
+}
+.ease {
+  -webkit-transition-timing-function: ease;
+}
+.linear {
+  -webkit-transition-timing-function: linear;
+}
+.ease-in {
+  -webkit-transition-timing-function: ease-in;
+}
+.ease-out {
+  -webkit-transition-timing-function: ease-out;
+}
+.ease-in-out {
+  -webkit-transition-timing-function: ease-in-out;
+}
+.cubic-bezier {
+  -webkit-transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+#example3 {
+  clear: both;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  border: solid 1px black;
+  margin-top: 20px;
+  position: relative;
+}
+#example3 div {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 245px;
+  left: 245px;
+  text-align: center;
+  line-height: 50px;
+
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+}
+#example3 .two {
+  -webkit-transition-delay: 0.5s;
+}
+#example3 .three {
+  -webkit-transition-delay: 1s;
+}
+#example3 .four {
+  -webkit-transition-delay: 1.5s;
+}
+#example3 .five {
+  -webkit-transition-delay: 2s;
+}
+#example3 .six {
+  -webkit-transition-delay: 2.5s;
+}
+
+#example3:hover .one {
+  top: 25px;
+  left: 25px;
+}
+#example3:hover .two {
+  top: 25px;
+}
+#example3:hover .three {
+  top: 25px;
+  left: 450px;
+}
+#example3:hover .four {
+  top: 450px;
+  left: 450px;
+}
+#example3:hover .five {
+  top: 450px;
+}
+#example3:hover .six {
+  top: 450px;
+  left: 25px;
+}
+  </style>
+  </head>
+  <body>
+    <div id="example1">
+      transition: background-color 1s;
+    </div>
+
+    <div id="example2">
+      <div class="ease">
+        ease (default)
+      </div>
+      <div class="linear">
+        linear
+      </div>
+      <div class="ease-in">
+        ease-in
+      </div>
+      <div class="ease-out">
+        ease-out
+      </div>
+      <div class="ease-in-out">
+        ease-in-out
+      </div>
+      <div class="cubic-bezier">
+        cubic-bezier
+      </div>
+    </div>
+
+    <div id="example3">
+      <div class="six">
+        3.0s
+      </div>
+      <div class="five">
+        2.5s
+      </div>
+      <div class="four">
+        2.0s
+      </div>
+      <div class="three">
+        1.5s
+      </div>
+      <div class="two">
+        1.0s
+      </div>
+      <div class="one">
+        0.5s
+      </div>
+    </div>
+  </body>
+</html>
