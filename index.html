@@ -1,102 +1,916 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>Intro to HTML5 & CSS3</title>
+    <title>Intro to HTML5 & CSS3</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/default.css" id="theme">
 
-		<link rel="stylesheet" href="reveal/css/main.css">
-		<link rel="stylesheet" href="reveal/css/theme/default.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
 
-		<script>
-			// If the query includes 'print-pdf' we'll use the PDF print sheet
-			document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+  <body>
 
-	<body>
+    <div class="reveal">
 
-		<div class="reveal">
+      <!-- Used to fade in a background when a specific slide state is reached -->
+      <div class="state-background"></div>
 
-			<!-- Used to fade in a background when a specific slide state is reached -->
-			<div class="state-background"></div>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>Intro to HTML5 & CSS3</h1>
+          <h3>Girl Develop It Pittsburgh</h3>
+        </section>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Intro to HTML5 & CSS3</h1>
-					<h3>Girl Develop It Pittsburgh</h3>
-				</section>
+        <section>
+          <h2>Introductions</h2>
+        </section>
 
-				<section>
-					<h2>Introductions</h2>
-				</section>
+        <section>
+          <h2>Please Ask Questions!</h2>
+        </section>
 
-				<section>
-					<h2>Please Ask Questions!</h2>
-				</section>
+        <section>
+          <h2>Goals for the Workshop</h2>
+          <ul>
+            <li class="fragment">Intro to HTML5</li>
+            <li class="fragment">Intro to CSS3</li>
+            <li class="fragment">How to use them to build awesome web sites</li>
+          </ul>
+        </section>
 
-				<section>
-					<h2>Goals for the Workshop</h2>
-				</section>
-			</div>
+        <section>
+          <section>
+            <h2>World Wide Web Consortium</h2>
+            <img src="images/W3C_Icon.svg">
+            <ul>
+              <li>Main international standards organization for the web</li>
+            </ul>
+          </section>
 
-			<!-- The navigational controls UI -->
-			<aside class="controls">
-				<a class="left" href="#">&#x25C4;</a>
-				<a class="right" href="#">&#x25BA;</a>
-				<a class="up" href="#">&#x25B2;</a>
-				<a class="down" href="#">&#x25BC;</a>
-			</aside>
+          <section>
+            <h2>HTML5 Specifications</h2>
+            <ul>
+              <li class="fragment">2004 - started work</li>
+              <li class="fragment">2008 - first public working draft</li>
+              <li class="fragment">2011 - last call</li>
+              <li class="fragment">2012 - work draft</li>
+              <li class="fragment">2014 - planned for stable recommendation</li>
+            </ul>
+          </section>
+        </section>
 
-			<!-- Presentation progress bar -->
-			<div class="progress"><span></span></div>
+        <section>
+          <section>
+            <h2>What about the browsers?</h2>
+            <ul>
+              <li>Chrome</li>
+              <li>Firefox</li>
+              <li>Internet Explorer</li>
+              <li>Safari</li>
+              <li>Opera</li>
+            </ul>
+          </section>
 
-		</div>
+          <section>
+            <h2><a href="http://caniuse.com/">Can I Use?</a></h2>
+          </section>
 
-		<script src="reveal/lib/js/head.min.js"></script>
-		<script src="reveal/js/reveal.min.js"></script>
+          <section>
+            <h2><a href="http://html5readiness.com/">HTML5 & CSS3 Readiness</a></h2>
+          </section>
+        </section>
 
-		<script>
+        <section>
+          <h2>Many Devices</h2>
+        </section>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
+        <section>
+          <h2>Power of the Browser</h2>
+        </section>
 
-				theme: Reveal.getQueryHash().theme || 'simple', // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/linear(2d)
+        <section>
+          <section>
+            <h2>Other Resources</h2>
+          </section>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'reveal/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
-					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'reveal/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'reveal/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
-					{ src: 'reveal/plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
-				]
-			});
+          <section>
+            <img src="images/html5rocks.png"/>
+            <p>
+              <a href="http://www.html5rocks.com">http://www.html5rocks.com</a>
+            </p>
+          </section>
 
-		</script>
+          <section>
+            <img src="images/Mozilla-Developer-Network.png"/>
+            <p>
+              <a href="https://developer.mozilla.org">https://developer.mozilla.org</a>
+            </p>
+          </section>
 
-	</body>
+          <section>
+            <img src="images/html5doctor.png"/>
+            <p>
+              <a href="http://html5doctor.com">http://html5doctor.com</a>
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <img src="images/html5.svg"/>
+        </section>
+
+        <section>
+          <h2>HTML5 Background</h2>
+          <ul>
+            <li>Builds on pre-existing specifications</li>
+            <li>A few things marked obsolete</li>
+            <li>A few things redefined</li>
+            <li>A bunch of new stuff</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Obsolete Elements</h2>
+        </section>
+
+        <section>
+          <img src="images/html5.svg" width="100"/>
+          <p>
+            <ul>
+              <li>storage</li>
+              <li>connectivity</li>
+              <li>file access</li>
+              <li>semantics</li>
+              <li>multimedia</li>
+              <li>3D/graphics</li>
+              <li>presentation</li>
+              <li>performance</li>
+            </ul>
+          </p>
+        </section>
+
+        <section>
+          <h2>Old Doctypes</h2>
+          <pre><code class="xml">
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd"&gt;
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>HTML5 Doctype</h2>
+          <pre><code class="xml">
+&lt;!DOCTYPE html&gt;
+          </code></pre>
+          <p>
+            Minimum information required to ensure that a browser renders using
+            standards mode
+          </p>
+        </section>
+
+        <section>
+          <h2>
+            <img src="images/html5-logo/html5_semantics.svg" height="50">
+            Semantic HTML
+          </h2>
+          <blockquote cite="http://en.wikipedia.org/wiki/Semantic_HTML">The use of HTML markup to reinforce the semantics, or meaning, of the information in webpages rather than merely to define its presentation (look).</blockquote>
+        </section>
+
+        <section>
+          <h2>Not Semantic</h2>
+          <pre><code>
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;I'm not semantic :(&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="header"&gt;
+      &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
+      &lt;div id="nav"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="http://www.foo.com"&gt;foo&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="http://www.bar.com"&gt;bar&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href="http://www.baz.com"&gt;baz&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="main"&gt;
+      &lt;div class="article"&gt;foo&lt;/div&gt;
+      &lt;div class="article"&gt;bar&lt;/div&gt;
+      &lt;div class="article"&gt;baz&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <img src="images/all-the-divs.jpg" />
+        </section>
+
+        <section>
+          <h2>All the Divs (Div-itis)</h2>
+          <pre><code>
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;I'm not semantic :(&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="header"&gt;
+      &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
+      &lt;div id="nav"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="http://www.foo.com"&gt;foo&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="http://www.bar.com"&gt;bar&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href="http://www.baz.com"&gt;baz&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="main"&gt;
+      &lt;div class="article"&gt;foo&lt;/div&gt;
+      &lt;div class="article"&gt;bar&lt;/div&gt;
+      &lt;div class="article"&gt;baz&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Semantic</h2>
+          <pre><code>
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;I'm not semantic :(&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="http://www.foo.com"&gt;foo&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="http://www.bar.com"&gt;bar&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="http://www.baz.com"&gt;baz&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+      &lt;article&gt;foo&lt;/article&gt;
+      &lt;article&gt;bar&lt;/article&gt;
+      &lt;article&gt;baz&lt;/article&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;Hi, I'm a footer!&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Semantic Markup Enhances</h2>
+          <ul>
+            <li>Accessibility</li>
+            <li>Searchability</li>
+            <li>Internationalization</li>
+            <li>Interoperability</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>It also helps treat the plague of div-itis!</p>
+        </section>
+
+        <section>
+          <section>
+            <h2>New Structural Elements</h2>
+          </section>
+
+          <section>
+            <h2>Section</h2>
+            <ul>
+              <li>Group together thematically related content</li>
+              <li>Similar to prior use of the div, but div has no semantic
+                meaning</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Header</h2>
+            <ul>
+              <li>Container for a group of introductory or navigational
+                aids</li>
+              <li>Document can have multiple header elements</li>
+              <li>E.g. One for the page, one for each section</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Footer</h2>
+            <ul>
+              <li>Contains information about its containing element</li>
+              <li>E.g. who wrote it, copyright, links to related content,
+                etc.</li>
+              <li>Document can have multiple footer elements</li>
+              <li>E.g. One for the page, one for each section</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Aside</h2>
+            <ul>
+              <li>Tangentially related content</li>
+              <li>E.g. sidebar, pull quotes</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Nav</h2>
+            <ul>
+              <li>Contains major navigational information</li>
+              <li>Usually a list of links</li>
+              <li>Often lives in the header</li>
+              <li>E.g. site navigation</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Article</h2>
+            <ul>
+              <li>Self-contained related content</li>
+              <li>E.g. blog posts, news stories, comments, reviews, forum
+                posts</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">
+            Sectioning Flowchart</a>
+        </section>
+
+        <section>
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_multimedia.svg" height="50">
+              Video
+            </h2>
+            <ul>
+              <li>Awesome replacement for flash</li>
+              <li>Flash makes our mobile devices sad :(</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_multimedia.svg" height="50">
+              Video
+            </h2>
+            <a href="http://www.dailymotion.com/us/html5">Example</a>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_multimedia.svg" height="50">
+              Audio
+            </h2>
+            <ul>
+              <li>Awesome replacement for flash</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_multimedia.svg" height="50">
+              Audio
+            </h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_3d_effects.svg" height="50">
+              Canvas
+            </h2>
+            <ul>
+              <li>Environment for creating dynamic images</li>
+              <li>Canvas element + javascript = dynamic content!</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_3d_effects.svg" height="50">
+              Canvas
+            </h2>
+            <ul>
+              <li>
+                <a href="http://lights.elliegoulding.com/">http://lights.elliegoulding.com/</a>
+              </li>
+              <li>
+                <a href="http://bomomo.com/">http://bomomo.com/</a>
+              </li>
+              <li>
+                <a href="http://canvasrider.com/">http://canvasrider.com/</a>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_device_access.svg" height="50">
+              Device Access
+            </h2>
+            <p>Rich, device-aware features and experiences</p>
+            <ul>
+              <li>Geolocation</li>
+              <li>Audio/video input</li>
+              <li>Local data (e.g. contacts, events)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_device_access.svg" height="50">
+              Geolocation
+            </h2>
+            <ul>
+              <li>
+                <a href="https://maps.google.com/">https://maps.google.com/</a>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_offline_storage.svg" height="50">
+              Offline Storage
+            </h2>
+            <a href="http://html5demos.com/storage-events">http://html5demos.com/storage-events</a>
+          </section>
+        </section>
+
+        <section>
+          <img src="images/css3.svg"/>
+        </section>
+
+        <section>
+          <h2>CSS3 Background</h2>
+          <ul>
+            <li>Series of modules that are designed to be implemented separately
+              and independently from each other</li>
+            <li>Enhances display and interactions</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>Vendor Prefixes</h2>
+            <a href="http://caniuse.com/">http://caniuse.com/</a>
+          </section>
+          <section>
+            <h2>Vendor Prefixes</h2>
+            <pre><code>
+.rounded {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+            </code></pre>
+          </section>
+          <section>
+            <h2>Vendor Prefixes</h2>
+            <ul>
+              <li>Each browser has their own</li>
+              <li>Flags it as a work-in-progress</li>
+              <li>When finished, the browser should support the non-prefixed
+                name</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Common Vendor Prefixes</h2>
+            <ul>
+              <li>-chrome-</li>
+              <li>-moz-</li>
+              <li>-ms-</li>
+              <li>-webkit-</li>
+              <li>-o-</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Vendor Prefixes</h2>
+            <ul>
+              <li>Order matters</li>
+              <li>A little annoying, but totally worth it!</li>
+              <li>Tools available to help (e.g. Compass)</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>Progressive Enhancement</h2>
+          <ul>
+            <li>
+              <a href="http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com/">Do web sites need to be experienced exactly the same in every
+              browser?</a>
+            </li>
+            <li>Consider what users will see using different browsers</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>border-radius</h2>
+            <ul>
+              <li>Allows you to create rounded corners</li>
+              <li>
+                <a href="http://border-radius.com/">http://border-radius.com/</a>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>border-radius</h2>
+            <pre><code>
+#example1 { border-radius: 4px; }
+            </code></pre>
+            <p>4px on all corners</p>
+
+            <pre><code>
+#example2 { border-radius: 4px 40px; }
+            </code></pre>
+            <p>4px on top left & bottom right</p>
+            <p>40px on to right & bottom left</p>
+
+            <pre><code>
+#example3 { border-radius: 2px 4px 8px 16px; }
+            </code></pre>
+            <p>2px on top left; 4px top right</p>
+            <p>8px bottom right; 16px bottom left</p>
+          </section>
+
+          <section>
+            <h2>border-radius</h2>
+            <pre><code>
+#example4 {
+  border-radius: 50%;
+}
+            </code></pre>
+            <p>Creates an ellipse</p>
+            <p>Creates a circle if the height == width</p>
+          </section>
+          <section>
+            <h2>border-radius</h2>
+            <p>Put examples here</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>rgba colors & opacity</h2>
+            <ul>
+              <li><strong>rgba</strong> - control the opacity of a color</li>
+              <li><strong>opacity</strong> - control the opacity of an
+                element</li>
+            </ul>
+          </section>
+          <section>
+            <h2>rgba colors & opacity</h2>
+            <pre><code>
+.example2.opacity {
+  opacity: 0.8;
+}
+            </code></pre>
+            <p>Opacity property is set to a decimal value from 0 to 1</p>
+            <pre><code>
+.example2.rgba {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+            </code></pre>
+            <p>rgba is set on a color property using (red, green, blue,
+              opacity)</p>
+          </section>
+          <section>
+            <h2>rgba colors & opacity</h2>
+            <p>Put example here</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>shadows</h2>
+            <ul>
+              <li>text-shadow</li>
+              <li>box-shadow</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>backgrounds</h2>
+            <ul>
+              <li>multiple background images</li>
+              <li>examples</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>gradients</h2>
+            <ul>
+              <li>Build a gradient with css</li>
+              <li>examples</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Transitions</h2>
+            <ul>
+              <li>Allow property changes in CSS values to occur smoothly over a
+                specified duration</li>
+              <li>Can create some awesome effects without any JavaScript</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Transitions</h2>
+            <ul>
+              <li>transition-property</li>
+              <li>transition-duration</li>
+              <li>transition-delay</li>
+              <li>transition-timing-function</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Transitions</h2>
+            <p>Examples</p>
+          </section>
+          <section>
+            <h2>Transition Triggers</h2>
+            <ul>
+              <li>Mouse click</li>
+              <li>Focus state</li>
+              <li>Active state</li>
+              <li>Hover</li>
+              <li>Changes to the element</li>
+            </ul>
+          </section>
+          <section>
+            <h2>transition-property</h2>
+          </section>
+          <section>
+            <h2>transition-duration</h2>
+          </section>
+          <section>
+            <h2>transition-delay</h2>
+            <p>Can delay transitions from the moment the trigger happens</p>
+          </section>
+          <section>
+            <h2>transition-timing-function</h2>
+            <ul>
+              <li>ease (default)</li>
+              <li>linear</li>
+              <li>ease-in</li>
+              <li>ease-out</li>
+              <li>ease-in-out</li>
+              <li>cubic-bezier</li>
+            </ul>
+          </section>
+          <section>
+            <h2>transitions: shorthand</h2>
+          </section>
+          <section>
+            <h2>transitions: multiple properties</h2>
+          </section>
+          <section>
+            <h2>transitions: all properties</h2>
+          </section>
+          <section>
+            <h2>css3 vs js transitions</h2>
+            <ul>
+              <li>CSS3 transitions will only work in modern browsers</li>
+              <li>JS transitions will work in many older browsers</li>
+            </ul>
+          </section>
+          <section>
+            <h2>transitions</h2>
+            <p>As with most things, best in moderation</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Transforms</h2>
+            <p>Allow elements rendered by CSS to be transformed in space</p>
+          </section>
+          <section>
+            <h2>Transform: Scale</h2>
+            <p>transform: scale(2); /* twice the size */</p>
+            <p>transform-origin: top left;</p>
+          </section>
+          <section>
+            <h2>Transform: Rotate</h2>
+            <p>transform: rotate(-10deg);</p>
+          </section>
+          <section>
+            <h2>Transform: Skew</h2>
+            <p>transform: skew(-5deg, 30deg);</p>
+          </section>
+          <section>
+            <h2>Transform: Translate</h2>
+            <p>Move element using x and y coordinates</p>
+            <p>transform: translate(20px, 40px);</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Animations</h2>
+            <a href="http://leaverou.github.com/animatable/">http://leaverou.github.com/animatable/</a>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Fonts</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>CSS3 Button</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Media Queries</h2>
+            <ul>
+              <li>A media type and at least one expression that limits the style
+                sheets' scope by using media features, such as width, height,
+                and color</li>
+              <li>Frequently used in responsive web design</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Media Queries</h2>
+            <p>Examples</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Tools & Deployment</h2>
+          </section>
+          <section>
+            <h2>Can I Use</h2>
+          </section>
+          <section>
+            <h2>HTML5 & CSS3 Readiness</h2>
+          </section>
+          <section>
+            <h2>HTML5 Rocks</h2>
+          </section>
+          <section>
+            <h2>Mozilla Developer Network</h2>
+          </section>
+          <section>
+            <h2>HTML5 Doctor</h2>
+          </section>
+          <section>
+            <h2>
+              <a href="http://code.google.com/p/html5shiv/">HTML5Shiv</a>
+            </h2>
+            <p>HTML5 IE enabling script</p>
+          </section>
+          <section>
+            <h2>Modernizr</h2>
+            <ul>
+              <li>JavaScript library that detects HTML5 and CSS3 features in the
+                user’s browser</li>
+              <li>Feature detection</li>
+              <li>Works well with polyfills - a piece of code (or plugin) that
+                provides the technology that you, the developer, expect the
+                browser to provide natively</li>
+            </ul>
+          </section>
+          <section>
+            <h2>HTML5 Boilerplate</h2>
+            <ul>
+              <li>Boilerplate to help you get started</li>
+              <li>
+                Includes:
+                <ul>
+                  <li>jQuery</li>
+                  <li>Modernizr</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Initializr</h2>
+            <ul>
+              <li>HTML5 templates generator to help you getting started with a
+                new project based on HTML5 Boilerplate. </li>
+              <li>It generates for you a clean customizable template with just
+                what you need to start!</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>Questions?</h2>
+        </section>
+
+        <section>
+          <section>
+            <h2>Activity: Enhance a web site using HTML5 & CSS3</h2>
+            <p>Enhance our “Women in Computing” web site to use HTML5 & CSS3</p>
+          </section>
+          <section>
+            <h2>Convert divs into semantic html5</h2>
+          </section>
+          <section>
+            <h2>Add rounded corners to navigation links</h2>
+          </section>
+          <section>
+            <h2>Add transitions to links</h2>
+          </section>
+          <section>
+            <h2>Make images into circles using border-radius</h2>
+          </section>
+          <section>
+            <h2>Change opacity on hover</h2>
+          </section>
+          <section>
+            <h2>Add text-shadow to headings</h2>
+          </section>
+          <section>
+            <h2>Now you try!</h2>
+            <ul>
+              <li>Tackle one small problem at a time</li>
+              <li>Ask for help</li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="reveal/lib/js/head.min.js"></script>
+    <script src="reveal/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+
+        theme: Reveal.getQueryHash().theme || 'simple', // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
 </html>
