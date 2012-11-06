@@ -536,6 +536,50 @@
         </section>
 
         <section>
+<style>
+article.border-radius {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.border-radius:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.border-radius div {
+  background-color: #CCC;
+  border: solid 4px black;
+  height: 200px;
+  margin: 20px auto;
+  width: 400px;
+}
+
+.border-radius .example1 {
+  border-radius: 20px;
+}
+
+.border-radius .example2 {
+  border-radius: 10px 40px;
+}
+
+.border-radius .example3 {
+  border-radius: 10px 20px 40px 80px;
+}
+
+.border-radius .example4 {
+  border-radius: 50%;
+  float: left;
+  height: 200px;
+}
+.border-radius .example5 {
+  border-radius: 50%;
+  float: right;
+  height: 200px;
+  width: 200px;
+}
+</style>
           <section>
             <h2>border-radius</h2>
             <ul>
@@ -549,21 +593,39 @@
           <section>
             <h2>border-radius</h2>
             <pre><code>
-#example1 { border-radius: 4px; }
+#example1 { border-radius: 20px; }
             </code></pre>
-            <p>4px on all corners</p>
+            <p>20px on all corners</p>
+            <article class="border-radius">
+              <div class="example1">
+              </div>
+            </article>
+          </section>
 
+          <section>
+            <h2>border-radius</h2>
             <pre><code>
-#example2 { border-radius: 4px 40px; }
+#example2 { border-radius: 10px 40px; }
             </code></pre>
-            <p>4px on top left & bottom right</p>
+            <p>10px on top left & bottom right</p>
             <p>40px on to right & bottom left</p>
+            <article class="border-radius">
+              <div class="example2">
+              </div>
+            </article>
+          </section>
 
+          <section>
+            <h2>border-radius</h2>
             <pre><code>
-#example3 { border-radius: 2px 4px 8px 16px; }
+#example3 { border-radius: 10px 20px 40px 80px; }
             </code></pre>
-            <p>2px on top left; 4px top right</p>
-            <p>8px bottom right; 16px bottom left</p>
+            <p>10px on top left; 20px top right</p>
+            <p>40px bottom right; 80px bottom left</p>
+            <article class="border-radius">
+              <div class="example3">
+              </div>
+            </article>
           </section>
 
           <section>
@@ -575,10 +637,12 @@
             </code></pre>
             <p>Creates an ellipse</p>
             <p>Creates a circle if the height == width</p>
-          </section>
-          <section>
-            <h2>border-radius</h2>
-            <p>Put examples here</p>
+            <article class="border-radius">
+              <div class="example4">
+              </div>
+              <div class="example5">
+              </div>
+            </article>
           </section>
         </section>
 
