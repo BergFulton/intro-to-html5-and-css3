@@ -912,22 +912,181 @@ article.rgba-opacity {
         </section>
 
         <section>
+<style>
+article.transform-scale {
+  margin: 0 auto;
+  padding: 100px;
+  width: 700px;
+}
+.transform-scale:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.transform-scale div {
+  background-color: #CCC;
+  border: solid 2px black;
+  float: left;
+  font-size: 18px;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 35px;
+  text-align: center;
+  width: 100px;
+}
+
+.transform-scale .example1:hover {
+  -webkit-transform: scale(2);
+}
+
+.transform-scale .example2:hover {
+  -webkit-transform: scale(0.5);
+}
+
+.transform-scale .example3, .transform-scale .example4 {
+  float: right;
+}
+.transform-scale .example3:hover {
+  -webkit-transform: scale(0.5, 1);
+}
+
+.transform-scale .example4:hover {
+  float: right;
+  -webkit-transform: scale(1, 0.5);
+}
+</style>
           <section>
             <h2>Transforms</h2>
             <p>Allow elements rendered by CSS to be transformed in space</p>
           </section>
           <section>
             <h2>Transform: Scale</h2>
-            <p>transform: scale(2); /* twice the size */</p>
-            <p>transform-origin: top left;</p>
+            <p>transform:  scale(sx[, sy]);</p>
+            <article class="transform-scale">
+              <div class="example1">
+                scale(2);
+              </div>
+
+              <div class="example2">
+                scale(0.5);
+              </div>
+
+              <div class="example4">
+                scale(1, 0.5);
+              </div>
+
+              <div class="example3">
+                scale(0.5, 1);
+              </div>
+            </article>
           </section>
           <section>
+<style>
+article.transform-rotate {
+  margin: 0 auto;
+  padding: 100px;
+  width: 700px;
+}
+.transform-rotate:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.transform-rotate div {
+  background-color: #CCC;
+  border: solid 2px black;
+  float: left;
+  font-size: 16px;
+  height: 120px;
+  line-height: 120px;
+  margin: 0 25px;
+  text-align: center;
+  width: 120px;
+}
+
+.transform-rotate .example1:hover {
+  -webkit-transform: rotate(45deg);
+}
+.transform-rotate .example2:hover {
+  -webkit-transform: rotate(-45deg);
+}
+.transform-rotate .example3:hover {
+  -webkit-transform: rotate(-90deg);
+}
+.transform-rotate .example4:hover {
+  -webkit-transform: rotate(180deg);
+}
+</style>
             <h2>Transform: Rotate</h2>
-            <p>transform: rotate(-10deg);</p>
+            <p>transform: rotate(angle);</p>
+            <article class="transform-rotate">
+              <div class="example1">
+                rotate(45deg);
+              </div>
+
+              <div class="example2">
+                rotate(-45deg);
+              </div>
+
+              <div class="example3">
+                rotate(-90deg);
+              </div>
+
+              <div class="example4">
+                rotate(180deg);
+              </div>
+            </article>
           </section>
           <section>
-            <h2>Transform: Skew</h2>
-            <p>transform: skew(-5deg, 30deg);</p>
+<style>
+article.transform-translate {
+  margin: 0 auto;
+  padding: 100px;
+  width: 700px;
+}
+.transform-translate:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.transform-translate div {
+  background-color: #CCC;
+  border: solid 2px black;
+  float: left;
+  font-size: 16px;
+  height: 120px;
+  line-height: 120px;
+  margin: 0 25px;
+  text-align: center;
+  width: 160px;
+}
+
+.transform-translate .example1:hover {
+  -webkit-transform: translate(20px);
+}
+.transform-translate .example2:hover {
+  -webkit-transform: translate(0, 20px);
+}
+
+.transform-translate .example3:hover {
+  -webkit-transform: translate(-20px, 20px);
+}
+</style>
+            <h2>Transform: Translate</h2>
+            <p>transform: translate(ax[, ay]);</p>
+            <article class="transform-translate">
+              <div class="example1">
+                translate(20px);
+              </div>
+
+              <div class="example2">
+                translate(0, 20px);
+              </div>
+
+              <div class="example3">
+                translate(-20px, 20px);
+              </div>
+            </article>
           </section>
           <section>
             <h2>Transform: Translate</h2>
