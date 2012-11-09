@@ -280,15 +280,12 @@
         <section>
           <h2>Semantic Markup Enhances</h2>
           <ul>
-            <li>Accessibility</li>
-            <li>Searchability</li>
-            <li>Internationalization</li>
-            <li>Interoperability</li>
+            <li class="fragment">Accessibility</li>
+            <li class="fragment">Searchability</li>
+            <li class="fragment">Internationalization</li>
+            <li class="fragment">Interoperability</li>
           </ul>
-        </section>
-
-        <section>
-          <p>It also helps treat the plague of div-itis!</p>
+          <p class="fragment">It also helps treat the plague of div-itis!</p>
         </section>
 
         <section>
@@ -487,6 +484,10 @@
           </section>
           <section>
             <h2>Vendor Prefixes</h2>
+            <img src="images/screenshots/caniuse-border-radius.png">
+          </section>
+          <section>
+            <h2>Vendor Prefixes</h2>
             <pre><code>
 .rounded {
   -webkit-border-radius: 4px;
@@ -673,13 +674,7 @@ article.border-radius {
             </ul>
           </section>
           <section>
-            <h2>rgba colors & opacity</h2>
-            <pre><code>
-.example2.opacity {
-  opacity: 0.8;
-}
-            </code></pre>
-            <p>Opacity property is set to a decimal value from 0 to 1</p>
+            <h2>rgba colors</h2>
             <pre><code>
 .example2.rgba {
   background-color: rgba(255, 0, 0, 0.8);
@@ -687,6 +682,15 @@ article.border-radius {
             </code></pre>
             <p>rgba is set on a color property using (red, green, blue,
               opacity)</p>
+          </section>
+          <section>
+            <h2>opacity</h2>
+            <pre><code>
+.example2.opacity {
+  opacity: 0.8;
+}
+            </code></pre>
+            <p>Opacity property is set to a decimal value from 0 to 1</p>
           </section>
           <section>
 <style>
@@ -814,6 +818,85 @@ article.rgba-opacity {
               <li>box-shadow</li>
             </ul>
           </section>
+          <section>
+<style>
+article.box-shadow {
+  font-size: 16px;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.box-shadow div {
+  border: solid 1px black;
+  border-radius: 10px;
+  height: 200px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.box-shadow .example1 {
+  box-shadow: 2px 2px 10px red;
+  float: left;
+}
+
+.box-shadow .example2 {
+  box-shadow: inset 2px 2px 10px red;
+  float: right;
+}
+</style>
+            <h2>box-shadow</h2>
+            <pre><code>
+#example1 { box-shadow: 2px 2px 10px red; }
+
+#example2 { box-shadow: inset 2px 2px 10px red; }
+            </code></pre>
+            <article class="box-shadow">
+              <div class="example1"></div>
+              <div class="example2"></div>
+            </article>
+          </section>
+          <section>
+<style>
+article.text-shadow {
+  font-size: 30px;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.text-shadow div {
+  border-radius: 10px;
+  text-align: center;
+}
+
+.text-shadow .example1 {
+  text-shadow: 2px 2px 10px red;
+}
+
+.text-shadow .example2 {
+  text-shadow:  1px 1px 10px red,     10px 10px 10px orange,
+               15px 15px 10px yellow, 20px 20px 10px green,
+               25px 25px 10px blue,   30px 30px 10px purple;
+}
+</style>
+            <h2>text-shadow</h2>
+            <pre><code>
+#example1 { text-shadow: 2px 2px 10px red; }
+
+#example2 {
+  text-shadow: 1px 1px 10px red,
+              10px 10px 10px orange,
+              15px 15px 10px yellow,
+              20px 20px 10px green,
+              25px 25px 10px blue,
+              30px 30px 10px purple;
+}
+            </code></pre>
+            <article class="text-shadow">
+              <div class="example1">lorem ipsum</div>
+              <div class="example2">lorem ipsum</div>
+            </article>
+          </section>
         </section>
 
         <section>
@@ -827,12 +910,57 @@ article.rgba-opacity {
         </section>
 
         <section>
+<style>
+article.gradients {
+  font-size: 30px;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.gradients div {
+  border-radius: 10px;
+  border: solid 1px black;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+
+.gradients .linear-example1 {
+  background-image: -webkit-linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+.gradients .linear-example2 {
+  background-image: -webkit-linear-gradient(right, red, orange, yellow, green, blue, indigo, violet);
+}
+.gradients .linear-example3 {
+  background-image: -webkit-linear-gradient(bottom right, red, orange, yellow, green, blue, indigo, violet);
+}
+</style>
           <section>
             <h2>gradients</h2>
             <ul>
               <li>Build a gradient with css</li>
               <li>examples</li>
             </ul>
+          </section>
+          <section>
+            <h2>linear gradients</h2>
+            <article class="gradients">
+              <div class="linear-example1">
+              </div>
+              <div class="linear-example2">
+              </div>
+              <div class="linear-example3">
+              </div>
+            </article>
+          </section>
+          <section>
+            <h2>radial gradients</h2>
+            <article class="gradients">
+              <div class="radial-example1">
+              </div>
+              <div class="radial-example2">
+              </div>
+            </article>
           </section>
         </section>
 
