@@ -235,25 +235,23 @@
 
         <section>
           <h2>Not Semantic</h2>
-          <pre><code>&lt;html&gt;
-  &lt;head&gt;&lt;title&gt;I'm not semantic :(&lt;/title&gt;&lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id="header"&gt;
-      &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
-      &lt;div id="nav"&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href="http://www.foo.com"&gt;foo&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="http://www.bar.com"&gt;bar&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
+          <pre><code>&lt;body&gt;
+  &lt;div id="header"&gt;
+    &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
+    &lt;div id="nav"&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="foo"&gt;foo&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="bar"&gt;bar&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
     &lt;/div&gt;
-    &lt;div id="main"&gt;
-      &lt;div class="article"&gt;foo&lt;/div&gt;
-      &lt;div class="article"&gt;bar&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+  &lt;/div&gt;
+  &lt;div id="main"&gt;
+    &lt;div class="article"&gt;foo&lt;/div&gt;
+    &lt;div class="article"&gt;bar&lt;/div&gt;
+    &lt;div class="article"&gt;baz&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
+&lt;/body&gt;</code></pre>
         </section>
 
         <section>
@@ -262,52 +260,44 @@
 
         <section>
           <h2>All the Divs (Div-itis)</h2>
-          <pre><code>&lt;html&gt;
-  &lt;head&gt;&lt;title&gt;I'm not semantic :(&lt;/title&gt;&lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id="header"&gt;
-      &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
-      &lt;div id="nav"&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href="http://www.foo.com"&gt;foo&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="http://www.bar.com"&gt;bar&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="http://www.baz.com"&gt;baz&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
+          <pre><code>&lt;body&gt;
+  &lt;div id="header"&gt;
+    &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
+    &lt;div id="nav"&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="foo"&gt;foo&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="bar"&gt;bar&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
     &lt;/div&gt;
-    &lt;div id="main"&gt;
-      &lt;div class="article"&gt;foo&lt;/div&gt;
-      &lt;div class="article"&gt;bar&lt;/div&gt;
-      &lt;div class="article"&gt;baz&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+  &lt;/div&gt;
+  &lt;div id="main"&gt;
+    &lt;div class="article"&gt;foo&lt;/div&gt;
+    &lt;div class="article"&gt;bar&lt;/div&gt;
+    &lt;div class="article"&gt;baz&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
+&lt;/body&gt;</code></pre>
         </section>
 
         <section>
           <h2>Semantic</h2>
-          <pre><code>&lt;html&gt;
-  &lt;head&gt;&lt;title&gt;I'm not semantic :(&lt;/title&gt;&lt;/head&gt;
-  &lt;body&gt;
-    &lt;header&gt;
-      &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
-      &lt;nav&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href="http://www.foo.com"&gt;foo&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="http://www.bar.com"&gt;bar&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="http://www.baz.com"&gt;baz&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;
-    &lt;/header&gt;
-    &lt;section&gt;
-      &lt;article&gt;foo&lt;/article&gt;
-      &lt;article&gt;bar&lt;/article&gt;
-      &lt;article&gt;baz&lt;/article&gt;
-    &lt;/section&gt;
-    &lt;footer&gt;Hi, I'm a footer!&lt;/footer&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+          <pre><code>&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="http://www.foo.com"&gt;foo&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="http://www.bar.com"&gt;bar&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;section&gt;
+    &lt;article&gt;foo&lt;/article&gt;
+    &lt;article&gt;bar&lt;/article&gt;
+    &lt;article&gt;baz&lt;/article&gt;
+  &lt;/section&gt;
+  &lt;footer&gt;Hi, I'm a footer!&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
         </section>
 
         <section>
