@@ -18,6 +18,9 @@
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
 
+    <!-- For the slides -->
+    <link rel="stylesheet" href="css/slides.css">
+
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
       document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
@@ -157,45 +160,6 @@
         </section>
 
         <section>
-<style>
-#html5-features li {
-  background-color: white;
-  background-size: 50px;
-  border-radius: 10px;
-  display: block;
-  float: left;
-  font-size: 0.7em;
-  height: 100px;
-  list-style: none;
-  margin: 8px;
-  text-align: center;
-  width: 175px;
-}
-li.effects_3d {
-  background: url('images/html5-logo/html5_3d_effects.svg') no-repeat 50% 80%;
-}
-li.css3_styling {
-  background: url('images/html5-logo/html5_css3_styling.svg') no-repeat 50% 80%;
-}
-li.multimedia {
-  background: url('images/html5-logo/html5_multimedia.svg') no-repeat 50% 80%;
-}
-li.connectivity {
-  background: url('images/html5-logo/html5_connectivity.svg') no-repeat 50% 80%;
-}
-li.semantics {
-  background: url('images/html5-logo/html5_semantics.svg') no-repeat 50% 80%;
-}
-li.perfintegration {
-  background: url('images/html5-logo/html5_perfintegration.svg') no-repeat 50% 80%;
-}
-li.offline_storage {
-  background: url('images/html5-logo/html5_offline_storage.svg') no-repeat 50% 80%;
-}
-li.device_access {
-  background: url('images/html5-logo/html5_device_access.svg') no-repeat 50% 80%;
-}
-</style>
           <img src="images/html5.svg" width="100"/>
           <ul id="html5-features">
             <li class="offline_storage fragment">storage</li>
@@ -569,23 +533,6 @@ li.device_access {
             </ul>
           </section>
           <section>
-<style>
-li.chrome {
-  list-style-image: url('images/chrome.svg');
-}
-li.firefox {
-  list-style-image: url('images/firefox.svg');
-}
-li.ie {
-  list-style-image: url('images/ie.svg');
-}
-li.webkit {
-  list-style-image: url('images/webkit.svg');
-}
-li.opera {
-  list-style-image: url('images/opera.svg');
-}
-</style>
             <h2>Common Vendor Prefixes</h2>
             <ul>
               <li class="chrome">-chrome-</li>
@@ -617,50 +564,6 @@ li.opera {
         </section>
 
         <section>
-<style>
-article.border-radius {
-  margin: 0 auto;
-  width: 700px;
-}
-
-.border-radius:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.border-radius div {
-  background-color: #CCC;
-  border: solid 4px black;
-  height: 200px;
-  margin: 20px auto;
-  width: 400px;
-}
-
-.border-radius .example1 {
-  border-radius: 20px;
-}
-
-.border-radius .example2 {
-  border-radius: 10px 40px;
-}
-
-.border-radius .example3 {
-  border-radius: 10px 20px 40px 80px;
-}
-
-.border-radius .example4 {
-  border-radius: 50%;
-  float: left;
-  height: 200px;
-}
-.border-radius .example5 {
-  border-radius: 50%;
-  float: right;
-  height: 200px;
-  width: 200px;
-}
-</style>
           <section>
             <h2>border-radius</h2>
             <ul>
@@ -761,73 +664,6 @@ article.border-radius {
             </ul>
           </section>
           <section>
-<style>
-article.rgba-opacity {
-  font-size: 16px;
-  margin: 0 auto;
-  width: 700px;
-}
-
-.rgba-opacity div {
-  border: solid 1px black;
-  border-radius: 10px;
-  height: 50px;
-  line-height: 50px;
-  margin: 10px;
-  text-align: center;
-  width: 325px;
-}
-
-.rgba-opacity .opacity {
-  float: left;
-  clear: left;
-}
-
-.rgba-opacity .rgba {
-  float: right;
-  clear: right;
-}
-
-.rgba-opacity .example1.opacity {
-  background-color: rgb(255, 0, 0);
-  opacity: 1;
-}
-.rgba-opacity .example1.rgba {
-  background-color: rgba(255, 0, 0, 1);
-}
-
-.rgba-opacity .example2.opacity {
-  background-color: rgb(255, 0, 0);
-  opacity: 0.8;
-}
-.rgba-opacity .example2.rgba {
-  background-color: rgba(255, 0, 0, 0.8);
-}
-
-.rgba-opacity .example3.opacity {
-  background-color: rgb(255, 0, 0);
-  opacity: 0.5;
-}
-.rgba-opacity .example3.rgba {
-  background-color: rgba(255, 0, 0, 0.5);
-}
-
-.rgba-opacity .example4.opacity {
-  background-color: rgb(255, 0, 0);
-  opacity: 0.2;
-}
-.rgba-opacity .example4.rgba {
-  background-color: rgba(255, 0, 0, 0.2);
-}
-
-.rgba-opacity .example5.opacity {
-  background-color: rgb(255, 0, 0);
-  opacity: 0;
-}
-.rgba-opacity .example5.rgba {
-  background-color: rgba(255, 0, 0, 0);
-}
-</style>
             <h2>rgba colors & opacity</h2>
             <article class="rgba-opacity">
               <article class="fragment">
@@ -887,32 +723,6 @@ article.rgba-opacity {
             </ul>
           </section>
           <section>
-<style>
-article.box-shadow {
-  font-size: 16px;
-  margin: 0 auto;
-  width: 700px;
-}
-
-.box-shadow div {
-  border: solid 1px black;
-  border-radius: 10px;
-  height: 200px;
-  margin: 10px;
-  text-align: center;
-  width: 200px;
-}
-
-.box-shadow .example1 {
-  box-shadow: 2px 2px 10px red;
-  float: left;
-}
-
-.box-shadow .example2 {
-  box-shadow: inset 2px 2px 10px red;
-  float: right;
-}
-</style>
             <h2>box-shadow</h2>
             <pre><code>
 #example1 { box-shadow: 2px 2px 10px red; }
@@ -925,28 +735,6 @@ article.box-shadow {
             </article>
           </section>
           <section>
-<style>
-article.text-shadow {
-  font-size: 30px;
-  margin: 0 auto;
-  width: 700px;
-}
-
-.text-shadow div {
-  border-radius: 10px;
-  text-align: center;
-}
-
-.text-shadow .example1 {
-  text-shadow: 2px 2px 10px red;
-}
-
-.text-shadow .example2 {
-  text-shadow:  1px 1px 10px red,     10px 10px 10px orange,
-               15px 15px 10px yellow, 20px 20px 10px green,
-               25px 25px 10px blue,   30px 30px 10px purple;
-}
-</style>
             <h2>text-shadow</h2>
             <pre><code>
 #example1 { text-shadow: 2px 2px 10px red; }
@@ -978,31 +766,6 @@ article.text-shadow {
         </section>
 
         <section>
-<style>
-article.gradients {
-  font-size: 30px;
-  margin: 0 auto;
-  width: 700px;
-}
-
-.gradients div {
-  border-radius: 10px;
-  border: solid 1px black;
-  height: 200px;
-  width: 200px;
-  text-align: center;
-}
-
-.gradients .linear-example1 {
-  background-image: -webkit-linear-gradient(red, orange, yellow, green, blue, indigo, violet);
-}
-.gradients .linear-example2 {
-  background-image: -webkit-linear-gradient(right, red, orange, yellow, green, blue, indigo, violet);
-}
-.gradients .linear-example3 {
-  background-image: -webkit-linear-gradient(bottom right, red, orange, yellow, green, blue, indigo, violet);
-}
-</style>
           <section>
             <h2>gradients</h2>
             <ul>
@@ -1108,49 +871,6 @@ article.gradients {
         </section>
 
         <section>
-<style>
-article.transform-scale {
-  margin: 0 auto;
-  padding: 100px;
-  width: 700px;
-}
-.transform-scale:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.transform-scale div {
-  background-color: #CCC;
-  border: solid 2px black;
-  float: left;
-  font-size: 18px;
-  height: 100px;
-  line-height: 100px;
-  margin: 0 35px;
-  text-align: center;
-  width: 100px;
-}
-
-.transform-scale .example1:hover {
-  -webkit-transform: scale(2);
-}
-
-.transform-scale .example2:hover {
-  -webkit-transform: scale(0.5);
-}
-
-.transform-scale .example3, .transform-scale .example4 {
-  float: right;
-}
-.transform-scale .example3:hover {
-  -webkit-transform: scale(0.5, 1);
-}
-
-.transform-scale .example4:hover {
-  float: right;
-  -webkit-transform: scale(1, 0.5);
-}
-</style>
           <section>
             <h2>Transforms</h2>
             <p>Allow elements rendered by CSS to be transformed in space</p>
@@ -1177,42 +897,6 @@ article.transform-scale {
             </article>
           </section>
           <section>
-<style>
-article.transform-rotate {
-  margin: 0 auto;
-  padding: 100px;
-  width: 700px;
-}
-.transform-rotate:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.transform-rotate div {
-  background-color: #CCC;
-  border: solid 2px black;
-  float: left;
-  font-size: 16px;
-  height: 120px;
-  line-height: 120px;
-  margin: 0 25px;
-  text-align: center;
-  width: 120px;
-}
-
-.transform-rotate .example1:hover {
-  -webkit-transform: rotate(45deg);
-}
-.transform-rotate .example2:hover {
-  -webkit-transform: rotate(-45deg);
-}
-.transform-rotate .example3:hover {
-  -webkit-transform: rotate(-90deg);
-}
-.transform-rotate .example4:hover {
-  -webkit-transform: rotate(180deg);
-}
-</style>
             <h2>Transform: Rotate</h2>
             <p>transform: rotate(angle);</p>
             <article class="transform-rotate">
@@ -1234,40 +918,6 @@ article.transform-rotate {
             </article>
           </section>
           <section>
-<style>
-article.transform-translate {
-  margin: 0 auto;
-  padding: 100px;
-  width: 700px;
-}
-.transform-translate:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.transform-translate div {
-  background-color: #CCC;
-  border: solid 2px black;
-  float: left;
-  font-size: 16px;
-  height: 120px;
-  line-height: 120px;
-  margin: 0 25px;
-  text-align: center;
-  width: 160px;
-}
-
-.transform-translate .example1:hover {
-  -webkit-transform: translate(20px);
-}
-.transform-translate .example2:hover {
-  -webkit-transform: translate(0, 20px);
-}
-
-.transform-translate .example3:hover {
-  -webkit-transform: translate(-20px, 20px);
-}
-</style>
             <h2>Transform: Translate</h2>
             <p>transform: translate(ax[, ay]);</p>
             <article class="transform-translate">
