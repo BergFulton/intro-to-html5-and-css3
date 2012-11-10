@@ -29,7 +29,7 @@
   </head>
 
   <body>
-
+    <div class="gdi"><p>pittsburgh</p></div>
     <div class="reveal">
 
       <!-- Used to fade in a background when a specific slide state is reached -->
@@ -42,12 +42,14 @@
           <h3>Girl Develop It Pittsburgh</h3>
         </section>
 
-        <section>
+        <section data-state="activity">
           <h2>Introductions</h2>
+          <img src="images/intro.png" alt="introduction">
         </section>
 
-        <section>
+        <section data-state="activity">
           <h2>Please Ask Questions!</h2>
+          <img src="images/question.png" alt="questions">
         </section>
 
         <section>
@@ -155,19 +157,56 @@
         </section>
 
         <section>
+<style>
+#html5-features li {
+  background-color: white;
+  background-size: 50px;
+  border-radius: 10px;
+  display: block;
+  float: left;
+  font-size: 0.7em;
+  height: 100px;
+  list-style: none;
+  margin: 8px;
+  text-align: center;
+  width: 175px;
+}
+li.effects_3d {
+  background: url('images/html5-logo/html5_3d_effects.svg') no-repeat 50% 80%;
+}
+li.css3_styling {
+  background: url('images/html5-logo/html5_css3_styling.svg') no-repeat 50% 80%;
+}
+li.multimedia {
+  background: url('images/html5-logo/html5_multimedia.svg') no-repeat 50% 80%;
+}
+li.connectivity {
+  background: url('images/html5-logo/html5_connectivity.svg') no-repeat 50% 80%;
+}
+li.semantics {
+  background: url('images/html5-logo/html5_semantics.svg') no-repeat 50% 80%;
+}
+li.perfintegration {
+  background: url('images/html5-logo/html5_perfintegration.svg') no-repeat 50% 80%;
+}
+li.offline_storage {
+  background: url('images/html5-logo/html5_offline_storage.svg') no-repeat 50% 80%;
+}
+li.device_access {
+  background: url('images/html5-logo/html5_device_access.svg') no-repeat 50% 80%;
+}
+</style>
           <img src="images/html5.svg" width="100"/>
-          <p>
-            <ul>
-              <li>storage</li>
-              <li>connectivity</li>
-              <li>file access</li>
-              <li>semantics</li>
-              <li>multimedia</li>
-              <li>3D/graphics</li>
-              <li>presentation</li>
-              <li>performance</li>
-            </ul>
-          </p>
+          <ul id="html5-features">
+            <li class="offline_storage fragment">storage</li>
+            <li class="connectivity fragment">connectivity</li>
+            <li class="device_access fragment">file access</li>
+            <li class="semantics fragment">semantics</li>
+            <li class="multimedia fragment">multimedia</li>
+            <li class="effects_3d fragment">3D/graphics</li>
+            <li class="css3_styling fragment">presentation</li>
+            <li class="perfintegration fragment">performance</li>
+          </ul>
         </section>
 
         <section>
@@ -452,6 +491,30 @@
               </li>
             </ul>
           </section>
+
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_device_access.svg" height="50">
+              Audio/Video Input
+            </h2>
+            <ul>
+              <li>
+                need example
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_device_access.svg" height="50">
+              Local Data
+            </h2>
+            <ul>
+              <li>
+                need example
+              </li>
+            </ul>
+          </section>
         </section>
 
         <section>
@@ -675,22 +738,27 @@ article.border-radius {
           </section>
           <section>
             <h2>rgba colors</h2>
+            <p>control the opacity of a color</p>
             <pre><code>
 .example2.rgba {
   background-color: rgba(255, 0, 0, 0.8);
 }
             </code></pre>
-            <p>rgba is set on a color property using (red, green, blue,
-              opacity)</p>
+            <p>color property using (red, green, blue, opacity)</p>
           </section>
           <section>
             <h2>opacity</h2>
+            <p>control the opacity of an element</p>
             <pre><code>
 .example2.opacity {
   opacity: 0.8;
 }
             </code></pre>
-            <p>Opacity property is set to a decimal value from 0 to 1</p>
+            <p>decimal value from 0 to 1</p>
+            <ul>
+              <li>0 - not visible</li>
+              <li>1 - fully visible</li>
+            </ul>
           </section>
           <section>
 <style>
@@ -1368,7 +1436,7 @@ article.transform-translate {
         progress: true,
         history: true,
 
-        theme: Reveal.getQueryHash().theme || 'simple', // available themes are in /css/theme
+        theme: Reveal.getQueryHash().theme || 'gdipgh', // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
 
         // Optional libraries used to extend on reveal.js
