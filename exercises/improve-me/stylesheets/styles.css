@@ -140,7 +140,7 @@ h4 {
 
 
 /* Famous Women */
-#famous li {
+#famous div {
   background-color: white;
   float: left;
   min-height: 250px;
@@ -149,11 +149,11 @@ h4 {
   width: 27.33%;
 }
 
-#famous li.break {
+#famous div.break {
   clear: both;
 }
 
-#famous li img {
+#famous div img {
   display: block;
   margin: 1em auto;
   width: 100%;

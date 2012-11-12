@@ -70,16 +70,16 @@ h4 {
 
 
 /* Navigation */
-.nav li {
+nav li {
   float: left;
 }
-.nav li a {
+nav li a {
   color: #fff;
   margin: 0 10px;
   padding: 5px 10px;
   text-decoration: none;
 }
-.nav li a:hover {
+nav li a:hover {
   color: #FB000D;
 }
 
@@ -113,18 +113,18 @@ header h1 {
   background: url('../images/icons/it.png') no-repeat 0 50%;
   padding-left: 40px;
 }
-header .nav {
+header nav {
   float: right;
   font-size: 1.2em;
   margin-left: 20px;
 }
-header .nav li {
+header nav li {
   line-height: 75px;
 }
-header .nav a {
+header nav a {
   border-radius: 6px;
 }
-header .nav a:hover {
+header nav a:hover {
   background-color: #fff;
 }
 
@@ -147,7 +147,7 @@ header:after {
 #famous h2 {
   text-shadow: 1px 1px 2px #009D92;
 }
-#famous li {
+#famous article {
   background-color: white;
   float: left;
   min-height: 250px;
@@ -157,22 +157,22 @@ header:after {
   width: 27.33%;
 }
 
-#famous li:hover {
+#famous article:hover {
   opacity: 1;
 }
 
-#famous li.break {
+#famous article:nth-child(4n+4) {
   clear: both;
 }
 
-#famous li img {
+#famous article img {
   border-radius: 50%;
   display: block;
   margin: 1em auto;
   width: 100%;
   height: 100%;
 }
-#famous li img:hover {
+#famous article img:hover {
   -webkit-transform: rotate(-5deg);
   -webkit-transform-origin: 50% 0;
 }
@@ -246,13 +246,13 @@ footer {
   background-color: #00665F;
 }
 
-footer .nav {
+footer nav {
   float: left;
   font-size: 1.1em;
   margin: 10px;
 }
 
-footer .nav a:hover {
+footer nav a:hover {
   color: #FFEECC;
 }
 
