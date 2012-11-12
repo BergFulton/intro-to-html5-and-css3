@@ -66,32 +66,42 @@
 
         <section>
           <h2>Goals for the Workshop</h2>
-          <ul>
-            <li class="fragment">Intro to HTML5</li>
-            <li class="fragment">Intro to CSS3</li>
-            <li class="fragment">How to use them to build awesome web sites</li>
-          </ul>
+          <p>
+            <ul>
+              <li>Intro to HTML5</li>
+              <li>Intro to CSS3</li>
+              <li>How to use them to build awesome web sites</li>
+            </ul>
+          </p>
         </section>
 
         <section>
-          <section>
-            <h2>World Wide Web Consortium</h2>
-            <img src="images/W3C_Icon.svg">
-            <ul>
-              <li>Main international standards organization for the web</li>
-            </ul>
-          </section>
+          <h2>Disclaimer</h2>
+          <p>There is a lot to cover for these technologies.
+            This workshop is just an introduction.</p>
+        </section>
 
-          <section>
-            <h2>HTML5 Specifications</h2>
-            <ul>
-              <li class="fragment">2004 - started work</li>
-              <li class="fragment">2008 - first public working draft</li>
-              <li class="fragment">2011 - last call</li>
-              <li class="fragment">2012 - work draft</li>
-              <li class="fragment">2014 - planned for stable recommendation</li>
-            </ul>
-          </section>
+        <section data-state="activity">
+          <h2>Activity: Enhance a web site using HTML5 & CSS3</h2>
+          <p>Enhance our “Women in Computing” web site to use HTML5 & CSS3</p>
+          <a href="exercises/improve-me/index.html">the site</a>
+        </section>
+
+        <section>
+          <h2>World Wide Web Consortium</h2>
+          <img src="images/W3C_Icon.svg">
+          <p>Main international standards organization for the web</p>
+        </section>
+
+        <section>
+          <h2>HTML5 Specifications</h2>
+          <ul>
+            <li class="fragment">2004 - started work</li>
+            <li class="fragment">2008 - first public working draft</li>
+            <li class="fragment">2011 - last call</li>
+            <li class="fragment">2012 - working draft</li>
+            <li class="fragment">2014 - planned for stable recommendation</li>
+          </ul>
         </section>
 
         <section>
@@ -108,10 +118,12 @@
 
           <section>
             <h2><a href="http://caniuse.com/">Can I Use?</a></h2>
+            <img src="images/screenshots/caniuse-border-radius.png"/>
           </section>
 
           <section>
             <h2><a href="http://html5readiness.com/">HTML5 & CSS3 Readiness</a></h2>
+            <img src="images/screenshots/html5-css3-readiness.png"/>
           </section>
         </section>
 
@@ -155,77 +167,91 @@
         </section>
 
         <section>
-          <h2>HTML5 Background</h2>
-          <ul>
-            <li>Builds on pre-existing specifications</li>
-            <li>A few things marked obsolete</li>
-            <li>A few things redefined</li>
-            <li>A bunch of new stuff</li>
-          </ul>
+          <h2>Builds on pre-existing specifications</h2>
         </section>
 
         <section>
-          <h2>Obsolete Elements</h2>
+          <h2>Marks some old things obsolete</h2>
+          <p>
+            <h4>Examples</h4>
+            <ul>
+              <li>Deprecated items (e.g. frame, frameset, noframes)</li>
+              <li>Presentational elements and attributes replaced by CSS (e.g.
+               font, big, center)</li>
+            </ul>
+          </p>
+          <a href="http://www.w3.org/TR/2011/WD-html5-20110405/obsolete.html">reference</a>
         </section>
 
         <section>
-          <img src="images/html5.svg" width="100"/>
+          <h2>Redefines a few things</h2>
+        </section>
+
+        <section>
+          <h2>Adds a bunch of new features</h2>
+          <img src="images/html5-features.png"/>
+        </section>
+
+        <section>
+          <section>
+            <h2>HTML5 Doctype</h2>
+            <pre><code class="xml">
+  &lt;!DOCTYPE html&gt;
+            </code></pre>
+            <p>
+              Minimum information required to ensure that a browser renders using
+              standards mode
+            </p>
+          </section>
+
+          <section>
+            <h2>Old Doctypes</h2>
+            <pre><code class="xml">
+  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd"&gt;
+
+  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+            </code></pre>
+          </section>
+        </section>
+
+        <section>
+          <h2>New Features</h2>
           <ul id="html5-features">
-            <li class="fragment">
-              <span>storage</span>
-              <img src="images/html5-logo/html5_offline_storage.svg" />
-            </li>
-            <li class="fragment">
-              <span>connectivity</span>
-              <img src="images/html5-logo/html5_connectivity.svg" />
-            </li>
-            <li class="fragment">
-              <span>file access</span>
-              <img src="images/html5-logo/html5_device_access.svg" />
-            </li>
-            <li class="fragment">
+            <li>
               <span>semantics</span>
               <img src="images/html5-logo/html5_semantics.svg" />
             </li>
-            <li class="fragment">
+            <li>
+              <span>offline & storage</span>
+              <img src="images/html5-logo/html5_offline_storage.svg" />
+            </li>
+            <li>
+              <span>device access</span>
+              <img src="images/html5-logo/html5_device_access.svg" />
+            </li>
+            <li>
+              <span>connectivity</span>
+              <img src="images/html5-logo/html5_connectivity.svg" />
+            </li>
+            <li>
               <span>multimedia</span>
               <img src="images/html5-logo/html5_multimedia.svg" />
             </li>
-            <li class="fragment">
-              <span>3D/graphics</span>
+            <li>
+              <span>3D & graphics</span>
               <img src="images/html5-logo/html5_effects_3d.svg" />
             </li>
-            <li class="fragment">
-              <span>presentation</span>
-              <img src="images/html5-logo/html5_css3_styling.svg" />
-            </li>
-            <li class="fragment">
+            <li>
               <span>performance</span>
               <img src="images/html5-logo/html5_perfintegration.svg" />
             </li>
+            <li>
+              <span>presentation</span>
+              <img src="images/html5-logo/html5_css3_styling.svg" />
+            </li>
           </ul>
-        </section>
-
-        <section>
-          <h2>Old Doctypes</h2>
-          <pre><code class="xml">
-&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd"&gt;
-
-&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
-          </code></pre>
-        </section>
-
-        <section>
-          <h2>HTML5 Doctype</h2>
-          <pre><code class="xml">
-&lt;!DOCTYPE html&gt;
-          </code></pre>
-          <p>
-            Minimum information required to ensure that a browser renders using
-            standards mode
-          </p>
         </section>
 
         <section>
@@ -237,81 +263,43 @@
         </section>
 
         <section>
-          <h2>Not Semantic</h2>
-          <pre><code>&lt;body&gt;
-  &lt;div id="header"&gt;
-    &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
-    &lt;div id="nav"&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href="foo"&gt;foo&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="bar"&gt;bar&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div id="main"&gt;
-    &lt;div class="article"&gt;foo&lt;/div&gt;
-    &lt;div class="article"&gt;bar&lt;/div&gt;
-    &lt;div class="article"&gt;baz&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
-&lt;/body&gt;</code></pre>
+          <h2>
+            <img src="images/html5-logo/html5_semantics.svg" height="50">
+            Semantics
+          </h2>
+          <p>
+            <h3>Give meaning to structure</h3>
+          </p>
         </section>
 
         <section>
-          <img src="images/all-the-divs.jpg" />
+          <h2>
+            Not Semantic
+          </h2>
+          <pre><code>
+&lt;div id="header"&gt;&lt;/div&gt;
+          </code></pre>
+          <pre><code>
+&lt;div class="nav"&gt;&lt;/div&gt;
+          </code></pre>
+          <pre><code>
+&lt;div id="footer"&gt;&lt;/div&gt;
+          </code></pre>
         </section>
 
         <section>
-          <h2>All the Divs (Div-itis)</h2>
-          <pre><code>&lt;body&gt;
-  &lt;div id="header"&gt;
-    &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
-    &lt;div id="nav"&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href="foo"&gt;foo&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="bar"&gt;bar&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div id="main"&gt;
-    &lt;div class="article"&gt;foo&lt;/div&gt;
-    &lt;div class="article"&gt;bar&lt;/div&gt;
-    &lt;div class="article"&gt;baz&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
-&lt;/body&gt;</code></pre>
-        </section>
-
-        <section>
-          <h2>Semantic</h2>
-          <pre><code>&lt;body&gt;
-  &lt;header&gt;
-    &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
-    &lt;nav&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href="http://www.foo.com"&gt;foo&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="http://www.bar.com"&gt;bar&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/nav&gt;
-  &lt;/header&gt;
-  &lt;section&gt;
-    &lt;article&gt;foo&lt;/article&gt;
-    &lt;article&gt;bar&lt;/article&gt;
-    &lt;article&gt;baz&lt;/article&gt;
-  &lt;/section&gt;
-  &lt;footer&gt;Hi, I'm a footer!&lt;/footer&gt;
-&lt;/body&gt;</code></pre>
-        </section>
-
-        <section>
-          <h2>Semantic Markup Enhances</h2>
-          <ul>
-            <li class="fragment">Accessibility</li>
-            <li class="fragment">Searchability</li>
-            <li class="fragment">Internationalization</li>
-            <li class="fragment">Interoperability</li>
-          </ul>
-          <p class="fragment">It also helps treat the plague of div-itis!</p>
+          <h2>
+            Semantic
+          </h2>
+          <pre><code>
+&lt;header&gt;&lt;/header&gt;
+          </code></pre>
+          <pre><code>
+&lt;nav&gt;&lt;/nav&gt;
+          </code></pre>
+          <pre><code>
+&lt;footer&gt;&lt;/footer&gt;
+          </code></pre>
         </section>
 
         <section>
@@ -380,6 +368,98 @@
         <section>
           <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">
             Sectioning Flowchart</a>
+        </section>
+
+        <section>
+          <h2>Not Semantic</h2>
+          <pre><code>&lt;body&gt;
+  &lt;div id="header"&gt;
+    &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
+    &lt;div id="nav"&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="foo"&gt;foo&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="bar"&gt;bar&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id="main"&gt;
+    &lt;div class="article"&gt;foo&lt;/div&gt;
+    &lt;div class="article"&gt;bar&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
+&lt;/body&gt;</code></pre>
+        </section>
+
+        <section>
+          <img src="images/all-the-divs.jpg" />
+        </section>
+
+        <section>
+          <h2>All the Divs (Div-itis)</h2>
+          <pre><code>&lt;body&gt;
+  &lt;div id="header"&gt;
+    &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
+    &lt;div id="nav"&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="foo"&gt;foo&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="bar"&gt;bar&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id="main"&gt;
+    &lt;div class="article"&gt;foo&lt;/div&gt;
+    &lt;div class="article"&gt;bar&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
+&lt;/body&gt;</code></pre>
+        </section>
+
+        <section>
+          <h2>Semantic</h2>
+          <pre><code>&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="http://www.foo.com"&gt;foo&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="http://www.bar.com"&gt;bar&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;section&gt;
+    &lt;article&gt;foo&lt;/article&gt;
+    &lt;article&gt;bar&lt;/article&gt;
+    &lt;article&gt;baz&lt;/article&gt;
+  &lt;/section&gt;
+  &lt;footer&gt;Hi, I'm a footer!&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+        </section>
+
+        <section>
+          <h2>Semantic Markup Enhances</h2>
+          <ul>
+            <li class="fragment">Accessibility</li>
+            <li class="fragment">Searchability</li>
+            <li class="fragment">Internationalization</li>
+            <li class="fragment">Interoperability</li>
+          </ul>
+          <p class="fragment">It also helps treat the plague of div-itis!</p>
+        </section>
+
+        <section>
+          <section>
+            <h2>What about old browsers?</h2>
+            <a href="http://caniuse.com/#feat=html5semantic">
+              <img src="images/screenshots/caniuse-semantics.png"/>
+            </a>
+          </section>
+
+          <section>
+            <h2>
+              <a href="http://code.google.com/p/html5shiv/">HTML5Shiv</a>
+            </h2>
+            <p>HTML5 IE enabling script</p>
+          </section>
         </section>
 
         <section>
