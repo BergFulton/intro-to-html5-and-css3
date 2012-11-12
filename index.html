@@ -599,6 +599,7 @@
           </section>
         </section>
 
+
         <section>
           <img src="images/css3.svg"/>
         </section>
@@ -614,6 +615,65 @@
 
         <section>
           <h2>New Selectors</h2>
+        </section>
+
+        <section>
+          <h2>Attribute Selectors</h2>
+          <ul>
+            <li>E[foo^="bar"] an E element whose "foo" attribute value begins exactly with the string "bar"</li>
+            <li>E[foo$="bar"] an E element whose "foo" attribute value ends exactly with the string "bar"</li>
+            <li>E[foo*="bar"] an E element whose "foo" attribute value contains the substring "bar"</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Pseudo-class Selectors</h2>
+          <ul>
+            <li>E:root  an E element, root of the document</li>
+            <li>E:nth-child(n)  an E element, the n-th child of its parent</li>
+            <li>E:nth-last-child(n) an E element, the n-th child of its parent, counting from the last one</li>
+            <li>E:nth-of-type(n)  an E element, the n-th sibling of its type</li>
+            <li>E:nth-last-of-type(n) an E element, the n-th sibling of its type, counting from the last one</li>
+            <li>E:last-child  an E element, last child of its parent</li>
+            <li>E:first-of-type an E element, first sibling of its type</li>
+            <li>E:last-of-type  an E element, last sibling of its type</li>
+            <li>E:only-child  an E element, only child of its parent</li>
+            <li>E:only-of-type  an E element, only sibling of its type</li>
+            <li>E:empty an E element that has no children (including text nodes)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Pseudo-class Selectors</h2>
+          <ul>
+            <li>E:target  an E element being the target of the referring URI</li>
+            <li>E:enabled E:disabled  a user interface element E which is enabled or disabled</li>
+            <li>E:checked a user interface element E which is checked (for instance a radio-button or checkbox)</li>
+            <li>E:not(s)  an E element that does not match simple selector</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Sibling Selectors</h2>
+          <ul>
+            <li>E ~ F an F element preceded by an E element</li>
+          </ul>
+        </section>
+
+        <section data-state="activity">
+          <section>
+            <h2>Activity: Enhance a web site using HTML5 & CSS3</h2>
+            <p>Enhance our “Women in Computing” web site to use HTML5 & CSS3</p>
+            <a href="exercises/improve-me/index.html">the site</a>
+          </section>
+
+          <section>
+            <h2>Use a pseudo-selector</h2>
+            <p>We need to clear every 4th famous woman</p>
+            <p>Previously, this was done by manually adding a
+              <strong>break</strong> class every 4th element</p>
+            <p>Replace this with an :nth-child selector</p>
+          </section>
         </section>
 
         <section>
@@ -678,12 +738,7 @@
         <section>
           <section>
             <h2>border-radius</h2>
-            <ul>
-              <li>Allows you to create rounded corners</li>
-              <li>
-                <a href="http://border-radius.com/">http://border-radius.com/</a>
-              </li>
-            </ul>
+            <p>Allows you to create rounded corners</p>
           </section>
 
           <section class="border-radius">
@@ -758,7 +813,7 @@
 }
             </code></pre>
             <p>Creates an ellipse</p>
-            <p>Creates a circle if the height == width</p>
+            <p>Creates a circle if height == width</p>
             <article class="border-radius">
               <div class="example4">
               </div>
@@ -1119,19 +1174,32 @@
             <h2>Tools & Deployment</h2>
           </section>
           <section>
-            <h2>Can I Use</h2>
+            <h2><a href="http://caniuse.com/">Can I Use?</a></h2>
+            <img src="images/screenshots/caniuse-border-radius.png"/>
           </section>
           <section>
-            <h2>HTML5 & CSS3 Readiness</h2>
+            <h2><a href="http://html5readiness.com/">HTML5 & CSS3 Readiness</a></h2>
+            <img src="images/screenshots/html5-css3-readiness.png"/>
           </section>
           <section>
-            <h2>HTML5 Rocks</h2>
+            <img src="images/html5rocks.png"/>
+            <p>
+              <a href="http://www.html5rocks.com">http://www.html5rocks.com</a>
+            </p>
           </section>
+
           <section>
-            <h2>Mozilla Developer Network</h2>
+            <img src="images/Mozilla-Developer-Network.png"/>
+            <p>
+              <a href="https://developer.mozilla.org">https://developer.mozilla.org</a>
+            </p>
           </section>
+
           <section>
-            <h2>HTML5 Doctor</h2>
+            <img src="images/html5doctor.png"/>
+            <p>
+              <a href="http://html5doctor.com">http://html5doctor.com</a>
+            </p>
           </section>
           <section>
             <h2>
@@ -1140,7 +1208,9 @@
             <p>HTML5 IE enabling script</p>
           </section>
           <section>
-            <h2>Modernizr</h2>
+            <h2>
+              <a href="http://modernizr.com/">Modernizr</a>
+            </h2>
             <ul>
               <li>JavaScript library that detects HTML5 and CSS3 features in the
                 user’s browser</li>
@@ -1151,7 +1221,9 @@
             </ul>
           </section>
           <section>
-            <h2>HTML5 Boilerplate</h2>
+            <h2>
+              <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>
+            </h2>
             <ul>
               <li>Boilerplate to help you get started</li>
               <li>
@@ -1164,7 +1236,9 @@
             </ul>
           </section>
           <section>
-            <h2>Initializr</h2>
+            <h2>
+              <a href="http://www.initializr.com/">Initializr</a>
+            </h2>
             <ul>
               <li>HTML5 templates generator to help you getting started with a
                 new project based on HTML5 Boilerplate. </li>
