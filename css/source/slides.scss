@@ -39,9 +39,12 @@ $browsers: (chrome, firefox, ie, webkit, opera);
   }
 }
 
-article.border-radius {
-  margin: 0 auto;
-  width: $example-width;
+.border-radius {
+
+  article {
+    margin: 0 auto;
+    width: $example-width;
+  }
 
   @include clearfix;
 
