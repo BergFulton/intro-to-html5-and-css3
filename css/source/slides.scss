@@ -12,7 +12,7 @@ $browsers: (chrome, firefox, ie, webkit, opera);
 }
 
 
-#html5-features li {
+.html5-features li {
   $html5-features-margin: 1%;
   $html5-features-count: 4;
 
@@ -181,9 +181,11 @@ article.gradients {
   div {
     @include border-radius(10px);
     border: solid 1px black;
+    float: left;
     height: 200px;
-    width: 200px;
+    margin: 10px;
     text-align: center;
+    width: 200px;
   }
 
   .linear-example1 {
@@ -199,6 +201,22 @@ article.gradients {
   .linear-example3 {
     @include background-image(
       linear-gradient(bottom right, red, orange, yellow, green, blue, indigo, violet)
+    );
+  }
+
+  .radial-example1 {
+    @include background-image(
+      radial-gradient(circle cover, red, orange, yellow, green, blue, indigo, violet)
+    );
+  }
+  .radial-example2 {
+    @include background-image(
+      radial-gradient(0 0, circle, red, orange, yellow, green, blue, indigo, violet)
+    );
+  }
+  .radial-example3 {
+    @include background-image(
+      radial-gradient(0 50%, circle, red, orange, yellow, green, blue, indigo, violet)
     );
   }
 }

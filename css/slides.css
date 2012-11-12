@@ -24,7 +24,7 @@ li.opera {
 }
 
 /* line 15, source/slides.scss */
-#html5-features li {
+.html5-features li {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -41,7 +41,7 @@ li.opera {
   width: 23%;
 }
 /* line 31, source/slides.scss */
-#html5-features li span {
+.html5-features li span {
   white-space: pre;
   white-space: pre-wrap;
   white-space: pre-line;
@@ -52,7 +52,7 @@ li.opera {
   word-wrap: break-word;
 }
 /* line 35, source/slides.scss */
-#html5-features li img {
+.html5-features li img {
   display: block;
   margin: 10px auto;
   width: 50px;
@@ -270,11 +270,13 @@ article.gradients div {
   -o-border-radius: 10px;
   border-radius: 10px;
   border: solid 1px black;
+  float: left;
   height: 200px;
-  width: 200px;
+  margin: 10px;
   text-align: center;
+  width: 200px;
 }
-/* line 189, source/slides.scss */
+/* line 191, source/slides.scss */
 article.gradients .linear-example1 {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
   background-image: -webkit-linear-gradient(#ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
@@ -282,7 +284,7 @@ article.gradients .linear-example1 {
   background-image: -o-linear-gradient(#ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   background-image: linear-gradient(#ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
 }
-/* line 194, source/slides.scss */
+/* line 196, source/slides.scss */
 article.gradients .linear-example2 {
   background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
   background-image: -webkit-linear-gradient(right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
@@ -290,7 +292,7 @@ article.gradients .linear-example2 {
   background-image: -o-linear-gradient(right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   background-image: linear-gradient(right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
 }
-/* line 199, source/slides.scss */
+/* line 201, source/slides.scss */
 article.gradients .linear-example3 {
   background-image: -webkit-gradient(linear, 100% 100%, 0% 0%, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
   background-image: -webkit-linear-gradient(bottom right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
@@ -298,8 +300,32 @@ article.gradients .linear-example3 {
   background-image: -o-linear-gradient(bottom right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   background-image: linear-gradient(bottom right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
 }
-
 /* line 207, source/slides.scss */
+article.gradients .radial-example1 {
+  background-image: -webkit-gradient(radial, circle cover, 0, circle cover, 100, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
+  background-image: -webkit-radial-gradient(circle cover, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  background-image: -moz-radial-gradient(circle cover, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  background-image: -o-radial-gradient(circle cover, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  background-image: radial-gradient(circle cover, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+}
+/* line 212, source/slides.scss */
+article.gradients .radial-example2 {
+  background-image: -webkit-gradient(radial, 0 0, 0, 0 0, 100, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
+  background-image: -webkit-radial-gradient(0 0, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  background-image: -moz-radial-gradient(0 0, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  background-image: -o-radial-gradient(0 0, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  background-image: radial-gradient(0 0, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+}
+/* line 217, source/slides.scss */
+article.gradients .radial-example3 {
+  background-image: -webkit-gradient(radial, 0 50%, 0, 0 50%, 100, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
+  background-image: -webkit-radial-gradient(0 50%, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  background-image: -moz-radial-gradient(0 50%, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  background-image: -o-radial-gradient(0 50%, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  background-image: radial-gradient(0 50%, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+}
+
+/* line 225, source/slides.scss */
 article.transform-scale {
   margin: 0 auto;
   padding: 100px;
@@ -307,7 +333,7 @@ article.transform-scale {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 214, source/slides.scss */
+/* line 232, source/slides.scss */
 article.transform-scale div {
   background-color: #cccccc;
   border: solid 2px #000;
@@ -319,7 +345,7 @@ article.transform-scale div {
   text-align: center;
   width: 100px;
 }
-/* line 226, source/slides.scss */
+/* line 244, source/slides.scss */
 article.transform-scale .example1:hover {
   -webkit-transform: scale(2);
   -moz-transform: scale(2);
@@ -327,7 +353,7 @@ article.transform-scale .example1:hover {
   -o-transform: scale(2);
   transform: scale(2);
 }
-/* line 230, source/slides.scss */
+/* line 248, source/slides.scss */
 article.transform-scale .example2:hover {
   -webkit-transform: scale(0.5);
   -moz-transform: scale(0.5);
@@ -335,11 +361,11 @@ article.transform-scale .example2:hover {
   -o-transform: scale(0.5);
   transform: scale(0.5);
 }
-/* line 234, source/slides.scss */
+/* line 252, source/slides.scss */
 article.transform-scale .example3, article.transform-scale .example4 {
   float: right;
 }
-/* line 237, source/slides.scss */
+/* line 255, source/slides.scss */
 article.transform-scale .example3:hover {
   -webkit-transform: scale(0.5, 1);
   -moz-transform: scale(0.5, 1);
@@ -347,7 +373,7 @@ article.transform-scale .example3:hover {
   -o-transform: scale(0.5, 1);
   transform: scale(0.5, 1);
 }
-/* line 241, source/slides.scss */
+/* line 259, source/slides.scss */
 article.transform-scale .example4:hover {
   -webkit-transform: scale(1, 0.5);
   -moz-transform: scale(1, 0.5);
@@ -356,7 +382,7 @@ article.transform-scale .example4:hover {
   transform: scale(1, 0.5);
 }
 
-/* line 247, source/slides.scss */
+/* line 265, source/slides.scss */
 article.transform-rotate {
   margin: 0 auto;
   padding: 100px;
@@ -364,7 +390,7 @@ article.transform-rotate {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 254, source/slides.scss */
+/* line 272, source/slides.scss */
 article.transform-rotate div {
   background-color: #cccccc;
   border: solid 2px black;
@@ -376,7 +402,7 @@ article.transform-rotate div {
   text-align: center;
   width: 120px;
 }
-/* line 266, source/slides.scss */
+/* line 284, source/slides.scss */
 article.transform-rotate .example1:hover {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -384,7 +410,7 @@ article.transform-rotate .example1:hover {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 269, source/slides.scss */
+/* line 287, source/slides.scss */
 article.transform-rotate .example2:hover {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -392,7 +418,7 @@ article.transform-rotate .example2:hover {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 272, source/slides.scss */
+/* line 290, source/slides.scss */
 article.transform-rotate .example3:hover {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -400,7 +426,7 @@ article.transform-rotate .example3:hover {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 275, source/slides.scss */
+/* line 293, source/slides.scss */
 article.transform-rotate .example4:hover {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -409,7 +435,7 @@ article.transform-rotate .example4:hover {
   transform: rotate(180deg);
 }
 
-/* line 281, source/slides.scss */
+/* line 299, source/slides.scss */
 article.transform-translate {
   margin: 0 auto;
   padding: 100px;
@@ -417,7 +443,7 @@ article.transform-translate {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 288, source/slides.scss */
+/* line 306, source/slides.scss */
 article.transform-translate div {
   background-color: #cccccc;
   border: solid 2px black;
@@ -429,7 +455,7 @@ article.transform-translate div {
   text-align: center;
   width: 170px;
 }
-/* line 300, source/slides.scss */
+/* line 318, source/slides.scss */
 article.transform-translate .example1:hover {
   -webkit-transform: translate(20px);
   -moz-transform: translate(20px);
@@ -437,7 +463,7 @@ article.transform-translate .example1:hover {
   -o-transform: translate(20px);
   transform: translate(20px);
 }
-/* line 303, source/slides.scss */
+/* line 321, source/slides.scss */
 article.transform-translate .example2:hover {
   -webkit-transform: translate(0, 20px);
   -moz-transform: translate(0, 20px);
@@ -445,7 +471,7 @@ article.transform-translate .example2:hover {
   -o-transform: translate(0, 20px);
   transform: translate(0, 20px);
 }
-/* line 307, source/slides.scss */
+/* line 325, source/slides.scss */
 article.transform-translate .example3:hover {
   -webkit-transform: translate(-20px, 20px);
   -moz-transform: translate(-20px, 20px);

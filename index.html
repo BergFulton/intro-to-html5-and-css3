@@ -128,16 +128,15 @@
         </section>
 
         <section>
-          <h2>Many Devices</h2>
-        </section>
-
-        <section>
-          <h2>Power of the Browser</h2>
-        </section>
-
-        <section>
           <section>
-            <h2>Other Resources</h2>
+            <h2>Helpful Resources</h2>
+          </section>
+
+          <section>
+            <img src="images/W3C_Icon.svg">
+            <p>
+              <a href="http://dev.w3.org/html5/spec/single-page.html">W3C HTML5 specs</a>
+            </p>
           </section>
 
           <section>
@@ -168,6 +167,7 @@
 
         <section>
           <h2>Builds on pre-existing specifications</h2>
+          <a href="http://dev.w3.org/html5/spec/single-page.html">HTML5 specs</a>
         </section>
 
         <section>
@@ -185,40 +185,13 @@
 
         <section>
           <h2>Redefines a few things</h2>
+          <p>Gives some old elements semantic meaning and separates them from
+            presentation (e.g. b, i, strong, em)</p>
         </section>
 
         <section>
           <h2>Adds a bunch of new features</h2>
-          <img src="images/html5-features.png"/>
-        </section>
-
-        <section>
-          <section>
-            <h2>HTML5 Doctype</h2>
-            <pre><code class="xml">
-  &lt;!DOCTYPE html&gt;
-            </code></pre>
-            <p>
-              Minimum information required to ensure that a browser renders using
-              standards mode
-            </p>
-          </section>
-
-          <section>
-            <h2>Old Doctypes</h2>
-            <pre><code class="xml">
-  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-  "http://www.w3.org/TR/html4/strict.dtd"&gt;
-
-  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
-            </code></pre>
-          </section>
-        </section>
-
-        <section>
-          <h2>New Features</h2>
-          <ul id="html5-features">
+          <ul class="html5-features">
             <li>
               <span>semantics</span>
               <img src="images/html5-logo/html5_semantics.svg" />
@@ -252,6 +225,30 @@
               <img src="images/html5-logo/html5_css3_styling.svg" />
             </li>
           </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>HTML5 Doctype</h2>
+            <pre><code class="xml">
+  &lt;!DOCTYPE html&gt;
+            </code></pre>
+            <p>
+              Minimum information required to ensure that a browser renders using
+              standards mode
+            </p>
+          </section>
+
+          <section>
+            <h2>Old Doctypes</h2>
+            <pre><code class="xml">
+  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd"&gt;
+
+  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+            </code></pre>
+          </section>
         </section>
 
         <section>
@@ -470,35 +467,8 @@
           </section>
 
           <section>
-            <h2>Modifying the site to use semantic HTML</h2>
-            <p>You have 10 minutes to <em>start</em> working on this.</p>
-          </section>
-        </section>
-
-        <section>
-          <h2>
-            <img src="images/html5-logo/html5_multimedia.svg" height="50">
-            Multimedia
-          </h2>
-          <p>Audio and video are first class citizens in HTML5</p>
-        </section>
-
-        <section>
-          <h2>
-            <img src="images/html5-logo/html5_multimedia.svg" height="50">
-            Multimedia
-          </h2>
-          <p>Useful as a replacement for flash on mobile devices</p>
-          <p>Flash makes mobile devices sad :(</p>
-        </section>
-
-        <section>
-          <section>
-            <h2>
-              <img src="images/html5-logo/html5_multimedia.svg" height="50">
-              Video
-            </h2>
-            <a href="http://www.dailymotion.com/us/html5">example</a>
+            <h2>Modify the site to use semantic HTML</h2>
+            <p>You have 10 minutes to start working on this.</p>
           </section>
         </section>
 
@@ -506,9 +476,38 @@
           <section>
             <h2>
               <img src="images/html5-logo/html5_multimedia.svg" height="50">
-              Audio
+              Multimedia
             </h2>
-            <a href="http://extension.fm/">example</a>
+            <p>Audio and video are first class citizens in HTML5</p>
+          </section>
+
+          <section>
+            <h2>
+              <img src="images/html5-logo/html5_multimedia.svg" height="50">
+              Multimedia
+            </h2>
+            <p>Useful as a replacement for flash on mobile devices</p>
+            <p>Flash makes mobile devices sad :(</p>
+          </section>
+
+          <section>
+            <section>
+              <h2>
+                <img src="images/html5-logo/html5_multimedia.svg" height="50">
+                Video
+              </h2>
+              <a href="http://www.dailymotion.com/us/html5">example</a>
+            </section>
+          </section>
+
+          <section>
+            <section>
+              <h2>
+                <img src="images/html5-logo/html5_multimedia.svg" height="50">
+                Audio
+              </h2>
+              <a href="http://extension.fm/">example</a>
+            </section>
           </section>
         </section>
 
@@ -671,19 +670,17 @@
             <h2>Use a pseudo-selector</h2>
             <p>We need to clear every 4th famous woman</p>
             <p>Previously, this was done by manually adding a
-              <strong>break</strong> class every 4th element</p>
-            <p>Replace this with an :nth-child selector</p>
+              <strong>break</strong> class to every 4th element</p>
+            <p>Replace this with an <strong>:nth-child</strong> selector</p>
           </section>
         </section>
 
         <section>
           <section>
             <h2>Vendor Prefixes</h2>
-            <a href="http://caniuse.com/">http://caniuse.com/</a>
-          </section>
-          <section>
-            <h2>Vendor Prefixes</h2>
-            <img src="images/screenshots/caniuse-border-radius.png">
+            <a href="http://caniuse.com/#feat=border-radius">
+              <img src="images/screenshots/caniuse-border-radius.png">
+            </a>
           </section>
           <section>
             <h2>Vendor Prefixes</h2>
@@ -908,6 +905,10 @@
         </section>
 
         <section>
+          <h2>text-stroke</h2>
+        </section>
+
+        <section>
           <section>
             <h2>shadows</h2>
             <ul>
@@ -983,6 +984,8 @@
               <div class="radial-example1">
               </div>
               <div class="radial-example2">
+              </div>
+              <div class="radial-example3">
               </div>
             </article>
           </section>
@@ -1260,6 +1263,16 @@
             <a href="exercises/improve-me/index.html">the site</a>
           </section>
           <section>
+            <h2>Continue enhancing the site using HTML5 & CSS3</h2>
+            <ul>
+              <li>Tackle one small problem at a time</li>
+              <li>Ask for help when you need it</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Convert divs into semantic html5</h2>
+          </section>
+          <section>
             <h2>Convert divs into semantic html5</h2>
           </section>
           <section>
@@ -1276,13 +1289,6 @@
           </section>
           <section>
             <h2>Add text-shadow to headings</h2>
-          </section>
-          <section>
-            <h2>Now you try!</h2>
-            <ul>
-              <li>Tackle one small problem at a time</li>
-              <li>Ask for help</li>
-            </ul>
           </section>
         </section>
       </div>
