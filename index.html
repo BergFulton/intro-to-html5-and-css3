@@ -21,6 +21,8 @@
     <!-- For the slides -->
     <link rel="stylesheet" href="css/slides.css">
 
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
       document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
@@ -251,12 +253,28 @@
           </section>
         </section>
 
+        <section data-state="activity">
+          <section>
+            <h2>Activity: Enhance a web site using HTML5 & CSS3</h2>
+            <p>Enhance our “Women in Computing” web site to use HTML5 & CSS3</p>
+            <a href="exercises/improve-me/index.html">the site</a>
+          </section>
+
+          <section>
+            <h2>Switch the doctype to HTML5</h2>
+            <pre><code class="xml">
+  &lt;!DOCTYPE html&gt;
+            </code></pre>
+          </section>
+        </section>
+
         <section>
           <h2>
             <img src="images/html5-logo/html5_semantics.svg" height="50">
             Semantic HTML
           </h2>
           <blockquote cite="http://en.wikipedia.org/wiki/Semantic_HTML">The use of HTML markup to reinforce the semantics, or meaning, of the information in webpages rather than merely to define its presentation (look).</blockquote>
+          <a href="http://en.wikipedia.org/wiki/Semantic_HTML">-Wikipedia</a>
         </section>
 
         <section>
@@ -363,8 +381,16 @@
         </section>
 
         <section>
-          <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">
-            Sectioning Flowchart</a>
+          <p>
+            <a href="http://html5doctor.com"><img src="images/html5doctor.png"/></a>
+          </p>
+          <p>
+            <a href="http://html5doctor.com/element-index/">element index</a>
+          </p>
+          <p>
+            <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">
+              sectioning flowchart</a>
+          </p>
         </section>
 
         <section>
@@ -388,11 +414,7 @@
         </section>
 
         <section>
-          <img src="images/all-the-divs.jpg" />
-        </section>
-
-        <section>
-          <h2>All the Divs (Div-itis)</h2>
+          <h2>A lot of Divs</h2>
           <pre><code>&lt;body&gt;
   &lt;div id="header"&gt;
     &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
@@ -409,6 +431,11 @@
   &lt;/div&gt;
   &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
 &lt;/body&gt;</code></pre>
+          <p>also known as div-itis</p>
+        </section>
+
+        <section>
+          <img src="images/all-the-divs.jpg" />
         </section>
 
         <section>
@@ -426,7 +453,6 @@
   &lt;section&gt;
     &lt;article&gt;foo&lt;/article&gt;
     &lt;article&gt;bar&lt;/article&gt;
-    &lt;article&gt;baz&lt;/article&gt;
   &lt;/section&gt;
   &lt;footer&gt;Hi, I'm a footer!&lt;/footer&gt;
 &lt;/body&gt;</code></pre>
@@ -456,6 +482,9 @@
               <a href="http://code.google.com/p/html5shiv/">HTML5Shiv</a>
             </h2>
             <p>HTML5 IE enabling script</p>
+            <pre><code>&lt;!--[if lt IE 9]&gt;
+&lt;script src="html5shiv.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;</code></pre>
           </section>
         </section>
 
@@ -468,7 +497,13 @@
 
           <section>
             <h2>Modify the site to use semantic HTML</h2>
-            <p>You have 10 minutes to start working on this.</p>
+            <ul>
+              <li>Change one small thing at a time</li>
+              <li>Remember to modify the CSS to match the HTML</li>
+              <li>You have 10 minutes to get started</li>
+              <li>You won't be able to change everything - if we have time, you
+                can continue at the end of the workshop</li>
+            </ul>
           </section>
         </section>
 
@@ -496,7 +531,7 @@
                 <img src="images/html5-logo/html5_multimedia.svg" height="50">
                 Video
               </h2>
-              <a href="http://www.dailymotion.com/us/html5">example</a>
+              <a href="http://www.dailymotion.com/us/html5">Dailymotion HTML5 Video Player</a>
             </section>
           </section>
 
@@ -506,7 +541,7 @@
                 <img src="images/html5-logo/html5_multimedia.svg" height="50">
                 Audio
               </h2>
-              <a href="http://extension.fm/">example</a>
+              <a href="http://extension.fm/">extension.fm</a>
             </section>
           </section>
         </section>
@@ -530,13 +565,13 @@
             </h2>
             <ul>
               <li>
-                <a href="http://lights.elliegoulding.com/">http://lights.elliegoulding.com/</a>
-              </li>
-              <li>
                 <a href="http://bomomo.com/">http://bomomo.com/</a>
               </li>
               <li>
                 <a href="http://canvasrider.com/">http://canvasrider.com/</a>
+              </li>
+              <li>
+                <a href="http://lights.elliegoulding.com/">http://lights.elliegoulding.com/</a>
               </li>
             </ul>
           </section>
@@ -556,11 +591,7 @@
               <img src="images/html5-logo/html5_device_access.svg" height="50">
               Geolocation
             </h2>
-            <ul>
-              <li>
-                <a href="https://maps.google.com/">https://maps.google.com/</a>
-              </li>
-            </ul>
+            <a href="https://maps.google.com/">Google Map</a>
           </section>
 
           <section>
@@ -673,6 +704,20 @@
               <strong>break</strong> class to every 4th element</p>
             <p>Replace this with an <strong>:nth-child</strong> selector</p>
           </section>
+
+          <section>
+            <h2>Example solutions</h2>
+            <pre><code>
+#famous article:nth-child(4n+4) {
+  clear: both;
+}
+            </code></pre>
+            <pre><code>
+#famous div:nth-child(4n+4) {
+  clear: both;
+}
+            </code></pre>
+          </section>
         </section>
 
         <section>
@@ -684,25 +729,15 @@
           </section>
           <section>
             <h2>Vendor Prefixes</h2>
-            <pre><code>
-.rounded {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-            </code></pre>
-          </section>
-          <section>
-            <h2>Vendor Prefixes</h2>
             <ul>
-              <li>Each browser has their own</li>
               <li>Flags it as a work-in-progress</li>
               <li>When finished, the browser should support the non-prefixed
                 name</li>
             </ul>
           </section>
           <section>
-            <h2>Common Vendor Prefixes</h2>
+            <h2>Vendor Prefixes</h2>
+            <h4>each browser has their own</h4>
             <ul>
               <li class="chrome">-chrome-</li>
               <li class="firefox">-moz-</li>
@@ -713,8 +748,21 @@
           </section>
           <section>
             <h2>Vendor Prefixes</h2>
+            <pre><code>
+.example{
+  -chrome-property: value;
+  -moz-property: value;
+  -ms-property: value;
+  -webkit-property: value;
+  -o-property: value;
+  property: value;
+}
+            </code></pre>
+            <p>Order matters - the non-prefixed property should always go last</p>
+          </section>
+          <section>
+            <h2>Vendor Prefixes</h2>
             <ul>
-              <li>Order matters</li>
               <li>A little annoying, but totally worth it!</li>
               <li>Tools available to help (e.g. Compass)</li>
             </ul>
@@ -991,6 +1039,36 @@
           </section>
         </section>
 
+        <section data-state="activity">
+          <section>
+            <h2>Activity: Enhance a web site using HTML5 & CSS3</h2>
+            <p>Enhance our “Women in Computing” web site to use HTML5 & CSS3</p>
+            <a href="exercises/improve-me/index.html">the site</a>
+          </section>
+          <section>
+            <h2>Enhance the site using CSS3 properties</h2>
+            <p>
+              <ul>
+                <li>Tackle one small problem at a time</li>
+                <li>You have 10 minutes to get started</li>
+                <li>You won't be able to change everything - if we have time, you
+                can continue at the end of the workshop</li>
+              </ul>
+            </p>
+          </section>
+          <section>
+            <h2>Suggestions</h2>
+            <ul>
+              <li>Give the navigation links rounded corners</li>
+              <li>Turn the famous women images into circles</li>
+              <li>Give the section headings a text shadow</li>
+              <li>Give the famous women images a drop shadow</li>
+              <li>Change the opacity of a famous woman on hover</li>
+              <li>Add stroke and/or shadow to the page title</li>
+            </ul>
+          </section>
+        </section>
+
         <section>
           <section>
             <h2>Transitions</h2>
@@ -1025,33 +1103,58 @@
           </section>
           <section>
             <h2>transition-property</h2>
+            <article>
+            </article>
+            <a href="http://leaverou.github.com/animatable/">animatable examples</a>
+            <a href="http://www.w3.org/TR/css3-transitions/#animatable-css">full list of supported properties</a>
           </section>
-          <section>
+
+          <section class="transition-duration">
             <h2>transition-duration</h2>
+            <p>the number of seconds or milliseconds a transition animation should take to complete</p>
+            <pre><code>
+.example1 { transition-duration: 2s; }
+            </code></pre>
+            <p>
+              <span class="value">2</span>s duration
+              <input type="range" min="0" max="10" value="3">
+            </p>
+            <article>
+              <div class="example">
+              </div>
+            </article>
           </section>
-          <section>
+
+          <section class="transition-delay">
             <h2>transition-delay</h2>
-            <p>Can delay transitions from the moment the trigger happens</p>
+            <p>delay transitions from the moment a trigger happens</p>
+            <pre><code>.example1 { transition-delay: 0s; }
+.example2 { transition-delay: 1s; }
+.example3 { transition-delay: 2s; }
+.example4 { transition-delay: 3s; }</code></pre>
+            <article>
+              <div class="example4">3</div>
+              <div class="example3">2</div>
+              <div class="example2">1</div>
+              <div class="example1">0</div>
+            </article>
           </section>
-          <section>
+
+          <section class="transition-timing-function">
             <h2>transition-timing-function</h2>
-            <ul>
-              <li>ease (default)</li>
-              <li>linear</li>
-              <li>ease-in</li>
-              <li>ease-out</li>
-              <li>ease-in-out</li>
-              <li>cubic-bezier</li>
-            </ul>
+            <p>determines how intermediate values are calculated</p>
+            <pre><code>.example { transition-timing-function: ease; }</code></pre>
+            <article>
+              <div class="ease">ease</div>
+              <div class="linear">linear</div>
+              <div class="ease-in">ease-in</div>
+              <div class="ease-out">ease-out</div>
+              <div class="ease-in-out">ease-in-out</div>
+              <div class="cubic-bezier">cubic-bezier</div>
+            </article>
           </section>
           <section>
             <h2>transitions: shorthand</h2>
-          </section>
-          <section>
-            <h2>transitions: multiple properties</h2>
-          </section>
-          <section>
-            <h2>transitions: all properties</h2>
           </section>
           <section>
             <h2>css3 vs js transitions</h2>
@@ -1073,6 +1176,7 @@
           </section>
           <section>
             <h2>Transform: Scale</h2>
+            <p>scales the element</p>
             <p>transform:  scale(sx[, sy]);</p>
             <article class="transform-scale">
               <div class="example1">
@@ -1094,6 +1198,7 @@
           </section>
           <section>
             <h2>Transform: Rotate</h2>
+            <p>rotates the element degrees around its origin</p>
             <p>transform: rotate(angle);</p>
             <article class="transform-rotate">
               <div class="example1">
@@ -1115,6 +1220,7 @@
           </section>
           <section>
             <h2>Transform: Translate</h2>
+            <p>move element using x and y coordinates</p>
             <p>transform: translate(ax[, ay]);</p>
             <article class="transform-translate">
               <div class="example1">
@@ -1131,16 +1237,55 @@
             </article>
           </section>
           <section>
-            <h2>Transform: Translate</h2>
-            <p>Move element using x and y coordinates</p>
-            <p>transform: translate(20px, 40px);</p>
+            <h2>Transform-origin</h2>
+            <p>the x and y origin for transformation</p>
+            <p>transform-origin: x-offset y-offset;</p>
+            <article class="transform-origin">
+              <div class="example1">
+                transform-origin(top, left)
+              </div>
+
+              <div class="example2">
+                transform-origin(50%, 50%)
+              </div>
+
+              <div class="example3">
+                transform-origin(0, 50px)
+              </div>
+            </article>
           </section>
         </section>
 
         <section>
           <section>
             <h2>Animations</h2>
-            <a href="http://leaverou.github.com/animatable/">http://leaverou.github.com/animatable/</a>
+            <p>animate transitions from one CSS style configuration to another</p>
+            <p>
+              <h4>Two Components</h4>
+              <ol>
+                <li>style describing the CSS animation</li>
+                <li>a set of keyframes that indicate the start and end states of
+                  the animation's style</li>
+              </ol>
+            </p>
+          </section>
+          <section>
+            <h2>Animations</h2>
+            <a href="http://leaverou.github.com/animatable/">animatable</a>
+            <pre><code>
+@-webkit-keyframes background-color{
+  from{background-color:slategray}
+  to{background-color:black}
+}
+#background-color { -webkit-animation: background-color 1s infinite alternate;background-color:slategray}
+            </code></pre>
+          </section>
+          <section>
+            <h2>Benefits of CSS3 Animations (over JS)</h2>
+            <ul>
+              <li>Easy for simple animations (no JavaScript required)</li>
+              <li>Performance</li>
+            </ul>
           </section>
         </section>
 
@@ -1153,22 +1298,34 @@
         <section>
           <section>
             <h2>CSS3 Button</h2>
+            <a href="http://hellohappy.org/css3-buttons/">examples</a>
           </section>
         </section>
 
         <section>
           <section>
             <h2>Media Queries</h2>
-            <ul>
-              <li>A media type and at least one expression that limits the style
+            <p>A media type and at least one expression that limits the style
                 sheets' scope by using media features, such as width, height,
-                and color</li>
-              <li>Frequently used in responsive web design</li>
-            </ul>
+                and color</p>
+          </section>
+          <section class="media-queries">
+            <h2>Media Queries</h2>
+            <div class="example"></div>
+            <pre><code>background-color: grey;
+@media screen and (min-width: 300px) and (max-width: 600px)
+{
+  background-color: red;
+}
+@media screen and (min-width: 900px) and (max-width: 1200px)
+{
+  background-color: blue;
+}</code></pre>
           </section>
           <section>
             <h2>Media Queries</h2>
-            <p>Examples</p>
+            <p>Frequently used in responsive web design</p>
+            <a href="http://buildresponsively.com/">Example: Build Responsively</a>
           </section>
         </section>
 
@@ -1267,28 +1424,9 @@
             <ul>
               <li>Tackle one small problem at a time</li>
               <li>Ask for help when you need it</li>
+              <li>Continue migrating to HTML5</li>
+              <li>Continue enhancing using CSS3</li>
             </ul>
-          </section>
-          <section>
-            <h2>Convert divs into semantic html5</h2>
-          </section>
-          <section>
-            <h2>Convert divs into semantic html5</h2>
-          </section>
-          <section>
-            <h2>Add rounded corners to navigation links</h2>
-          </section>
-          <section>
-            <h2>Add transitions to links</h2>
-          </section>
-          <section>
-            <h2>Make images into circles using border-radius</h2>
-          </section>
-          <section>
-            <h2>Change opacity on hover</h2>
-          </section>
-          <section>
-            <h2>Add text-shadow to headings</h2>
           </section>
         </section>
       </div>

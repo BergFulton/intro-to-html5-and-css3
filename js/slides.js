@@ -16,4 +16,13 @@ $(document).ready(function() {
 
     example.css("border-radius", setting);
   });
+
+  $(".transition-duration").on("change", "input", function() {
+    var parent     = $(this).parents(".transition-duration"),
+        new_value  = $(this).val();
+
+    parent.find(".number").text(new_value);
+    parent.find("p .value").text(new_value);
+    parent.find(".example").css("transition-duration", new_value + "s");
+  });
 });
