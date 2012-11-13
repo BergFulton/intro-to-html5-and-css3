@@ -205,7 +205,12 @@ header:after {
   content: '6';
   font-family: 'EntypoRegular';
   font-size: 40px;
+  opacity: 0.5;
   padding-right: 10px;
+  text-shadow: 0px 0px 2px #888;
+}
+#organizations ul li:hover:before {
+  opacity: 1;
 }
 
 #organizations img {
@@ -240,6 +245,10 @@ header:after {
   font-family: 'EntypoRegular';
   font-size: 30px;
   padding-right: 10px;
+  text-shadow: 1px 1px 1px #CCC;
+}
+#facts ul li:hover:before {
+  color: #FF6F00;
 }
 
 
