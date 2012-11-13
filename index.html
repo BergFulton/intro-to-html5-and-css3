@@ -686,17 +686,48 @@
           </section>
         </section>
 
+
         <section>
-          <h2>Pseudo-class Selectors</h2>
-          <ul>
-            <li>E:root  an E element, root of the document</li>
-            <li>E:nth-child(n)  an E element, the n-th child of its parent</li>
-            <li>E:nth-last-child(n) an E element, the n-th child of its parent, counting from the last one</li>
-            <li>E:last-child  an E element, last child of its parent</li>
-            <li>E:only-child  an E element, only child of its parent</li>
-            <li>E:empty an E element that has no children (including text nodes)</li>
-          </ul>
+          <section>
+            <h2>Pseudo-class Selectors</h2>
+            <ul>
+              <li>E:root  an E element, root of the document</li>
+              <li>E:nth-child(n)  an E element, the n-th child of its parent</li>
+              <li>E:nth-last-child(n) an E element, the n-th child of its parent, counting from the last one</li>
+              <li>E:last-child  an E element, last child of its parent</li>
+              <li>E:only-child  an E element, only child of its parent</li>
+              <li>E:empty an E element that has no children (including text nodes)</li>
+            </ul>
+          </section>
+
+          <section class="nth-child">
+            <h2>Use nth-child to make a grid</h2>
+            <pre><code>tr:nth-child(even) {
+    td:nth-child(even) { background-color: black; }
+    td:nth-child(odd) { background-color: white; }
+  }
+
+  tr:nth-child(odd) {
+    td:nth-child(even) { background-color: white; }
+    td:nth-child(odd) { background-color: black; }
+  }</code></pre>
+            <table>
+              <tr>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+            </table>
+          </section>
         </section>
+
 
         <section>
           <h2>Pseudo-class Selectors</h2>
