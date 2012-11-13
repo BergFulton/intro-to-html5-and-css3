@@ -47,8 +47,15 @@
       <div class="slides">
 
         <section data-state="activity">
-          <h2>Class Materials</h2>
-          <a id="download-link" href="http://bit.ly/gdipgh-html5">http://bit.ly/gdipgh-html5</a>
+          <p>
+            <h3>Download Class Materials</h3>
+            <a class="download-link" href="http://bit.ly/gdipgh-html5-download">http://bit.ly/gdipgh-html5-download</a>
+          </p>
+
+          <p>
+            <h3>View Class Slides</h3>
+            <a class="download-link" href="http://bit.ly/gdipgh-html5">http://bit.ly/gdipgh-html5</a>
+          </p>
         </section>
 
         <section>
@@ -953,10 +960,6 @@
         </section>
 
         <section>
-          <h2>text-stroke</h2>
-        </section>
-
-        <section>
           <section>
             <h2>shadows</h2>
             <ul>
@@ -997,13 +1000,16 @@
           </section>
         </section>
 
-        <section>
+        <section class="multiple-backgrounds">
           <section>
             <h2>backgrounds</h2>
-            <ul>
-              <li>multiple background images</li>
-              <li>examples</li>
-            </ul>
+            <p>CSS3 allows multiple background images</p>
+            <pre><code>.example {
+  background-image: url('../images/html5-features.png'),
+                    url('../images/sky.jpg');
+}</code></pre>
+            <div>
+            </div>
           </section>
         </section>
 
@@ -1064,7 +1070,7 @@
               <li>Give the section headings a text shadow</li>
               <li>Give the famous women images a drop shadow</li>
               <li>Change the opacity of a famous woman on hover</li>
-              <li>Add stroke and/or shadow to the page title</li>
+              <li>Add text shadow to the page title</li>
             </ul>
           </section>
         </section>
@@ -1079,19 +1085,6 @@
             </ul>
           </section>
           <section>
-            <h2>Transitions</h2>
-            <ul>
-              <li>transition-property</li>
-              <li>transition-duration</li>
-              <li>transition-delay</li>
-              <li>transition-timing-function</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Transitions</h2>
-            <p>Examples</p>
-          </section>
-          <section>
             <h2>Transition Triggers</h2>
             <ul>
               <li>Mouse click</li>
@@ -1102,11 +1095,33 @@
             </ul>
           </section>
           <section>
+            <h2>Transition Properties</h2>
+            <ul>
+              <li>transition-property</li>
+              <li>transition-duration</li>
+              <li>transition-delay</li>
+              <li>transition-timing-function</li>
+            </ul>
+          </section>
+          <section>
             <h2>transition-property</h2>
-            <article>
-            </article>
-            <a href="http://leaverou.github.com/animatable/">animatable examples</a>
-            <a href="http://www.w3.org/TR/css3-transitions/#animatable-css">full list of supported properties</a>
+            <p>the names of CSS properties that should be transitions</p>
+            <pre><code>
+.example1 { transition-property: background-color; }
+            </code></pre>
+            <p>set to <strong>all</strong> to transition all CSS properties</p>
+            <pre><code>
+.example2 { transition-property: all; }
+            </code></pre>
+          </section>
+          <section>
+            <h2>transition-property</h2>
+            <p>
+              <a href="http://leaverou.github.com/animatable/">animatable examples</a>
+            </p>
+            <p>
+              <a href="http://www.w3.org/TR/css3-transitions/#animatable-css">full list of supported properties</a>
+            </p>
           </section>
 
           <section class="transition-duration">
@@ -1152,20 +1167,6 @@
               <div class="ease-in-out">ease-in-out</div>
               <div class="cubic-bezier">cubic-bezier</div>
             </article>
-          </section>
-          <section>
-            <h2>transitions: shorthand</h2>
-          </section>
-          <section>
-            <h2>css3 vs js transitions</h2>
-            <ul>
-              <li>CSS3 transitions will only work in modern browsers</li>
-              <li>JS transitions will work in many older browsers</li>
-            </ul>
-          </section>
-          <section>
-            <h2>transitions</h2>
-            <p>As with most things, best in moderation</p>
           </section>
         </section>
 
@@ -1253,6 +1254,10 @@
                 transform-origin(0, 50px)
               </div>
             </article>
+          </section>
+          <section>
+            <h2>3D transforms</h2>
+            <a href="http://desandro.github.com/3dtransforms/">examples</a>
           </section>
         </section>
 

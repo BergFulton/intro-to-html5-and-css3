@@ -124,7 +124,6 @@ article.rgba-opacity {
   @include rgba-opacity-example(5, 0);
 }
 
-
 article.box-shadow {
   font-size: 16px;
   margin: 0 auto;
@@ -170,6 +169,16 @@ article.text-shadow {
                         15px 15px 10px yellow, 20px 20px 10px green,
                         25px 25px 10px blue,   30px 30px 10px purple);
   }
+}
+
+
+.multiple-backgrounds div {
+  background-image: url('../images/html5-features.png'), url('../images/sky.jpg');
+  background-position: 50% 50%, 50% 50%;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin: 0 auto;
+  width: $example-width;
 }
 
 

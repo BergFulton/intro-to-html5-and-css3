@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Questrial);
 /**
  * Sky theme for reveal.js.
- * 
+ *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 /*********************************************
@@ -27,7 +27,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 20px;
-  opacity: 0.2; 
+  opacity: 0.2;
 }
 
 .gdi p {
@@ -35,7 +35,7 @@ body {
   text-align: center;
   font-family: 'Questrial', sans-serif;
   position: fixed;
-  bottom: 0; 
+  bottom: 0;
 }
 
 ::selection {
@@ -95,7 +95,7 @@ body {
   background-color: none;
 }
 
-.reveal .roll:hover span { 
+.reveal .roll:hover span {
       -webkit-transform: none;
          -moz-transform: none;
           -ms-transform: none;
@@ -186,7 +186,7 @@ body {
   background: rgba( 50, 200, 90, 0.3 );
 }
 
-#download-link {
-  font-size: 300%;
+section .download-link {
+  font-size: 200%;
 }
 
