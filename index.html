@@ -656,12 +656,34 @@
         </section>
 
         <section>
-          <h2>Attribute Selectors</h2>
-          <ul>
-            <li>E[foo^="bar"] an E element whose "foo" attribute value begins exactly with the string "bar"</li>
-            <li>E[foo$="bar"] an E element whose "foo" attribute value ends exactly with the string "bar"</li>
-            <li>E[foo*="bar"] an E element whose "foo" attribute value contains the substring "bar"</li>
-          </ul>
+          <section>
+            <h2>Attribute Selectors</h2>
+            <ul>
+              <li><strong>E[foo^="bar"]</strong> an E element whose "foo" attribute value begins exactly with the string "bar"</li>
+              <li><strong>E[foo$="bar"]</strong> an E element whose "foo" attribute value ends exactly with the string "bar"</li>
+              <li><strong>E[foo*="bar"]</strong> an E element whose "foo" attribute value contains the substring "bar"</li>
+            </ul>
+          </section>
+
+          <section class="attribute-selectors">
+            <h2>Attribute Selectors</h2>
+            <pre><code>
+  div[foo^="bar"] {
+    color: red;
+  }
+  div[foo$="bar"] {
+    background-color: red;
+  }
+  div[foo*="bar"] {
+    border: solid 5px red;
+  }
+            </code></pre>
+            <article>
+              <div foo="barley">foo="barley"</div>
+              <div foo="lumbar">foo="lumbar"</div>
+              <div foo="embark">foo="embark"</div>
+            </article>
+          </section>
         </section>
 
         <section>
@@ -670,14 +692,20 @@
             <li>E:root  an E element, root of the document</li>
             <li>E:nth-child(n)  an E element, the n-th child of its parent</li>
             <li>E:nth-last-child(n) an E element, the n-th child of its parent, counting from the last one</li>
+            <li>E:last-child  an E element, last child of its parent</li>
+            <li>E:only-child  an E element, only child of its parent</li>
+            <li>E:empty an E element that has no children (including text nodes)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Pseudo-class Selectors</h2>
+          <ul>
             <li>E:nth-of-type(n)  an E element, the n-th sibling of its type</li>
             <li>E:nth-last-of-type(n) an E element, the n-th sibling of its type, counting from the last one</li>
-            <li>E:last-child  an E element, last child of its parent</li>
             <li>E:first-of-type an E element, first sibling of its type</li>
             <li>E:last-of-type  an E element, last sibling of its type</li>
-            <li>E:only-child  an E element, only child of its parent</li>
             <li>E:only-of-type  an E element, only sibling of its type</li>
-            <li>E:empty an E element that has no children (including text nodes)</li>
           </ul>
         </section>
 

@@ -39,6 +39,28 @@ $browsers: (chrome, firefox, ie, webkit, opera);
   }
 }
 
+
+.attribute-selectors {
+  div {
+    width: 220px;
+    height: 100px;
+    line-height: 100px;
+    margin: 10px;
+    float: left;
+  }
+
+  div[foo^="bar"] {
+    color: red;
+  }
+  div[foo$="bar"] {
+    background-color: red;
+  }
+  div[foo*="bar"] {
+    border: solid 5px red;
+  }
+}
+
+
 .border-radius {
 
   article {
