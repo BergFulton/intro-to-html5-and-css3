@@ -134,7 +134,19 @@
             <h2><a href="http://html5readiness.com/">HTML5 & CSS3 Readiness</a></h2>
             <img src="images/screenshots/html5-css3-readiness.png"/>
           </section>
+
+          <section>
+            <h2><a href="http://html5please.com/">HTML5 Please</a></h2>
+            <img src="images/screenshots/html5-please.png"/>
+          </section>
+
+          <section>
+            <p><a href="http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com/">Do web sites need to be experienced exactly the same in every
+                browser?</a></p>
+            <p class="fragment">Consider what users will see using different browsers</p>
+          </section>
         </section>
+
 
         <section>
           <section>
@@ -492,6 +504,7 @@
             <pre><code>&lt;!--[if lt IE 9]&gt;
 &lt;script src="html5shiv.js"&gt;&lt;/script&gt;
 &lt;![endif]--&gt;</code></pre>
+            <blockquote class="fragment">polyfill (n): a JavaScript shim that replicates the standard API for older browsers</blockquote>
           </section>
         </section>
 
@@ -507,7 +520,7 @@
             <ul>
               <li>Change one small thing at a time</li>
               <li>Remember to modify the CSS to match the HTML</li>
-              <li>You have 10 minutes to get started</li>
+              <li>You have 15 minutes to get started</li>
               <li>You won't be able to change everything - if we have time, you
                 can continue at the end of the workshop</li>
             </ul>
@@ -607,21 +620,8 @@
               Audio/Video Input
             </h2>
             <ul>
-              <li>
-                need example
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>
-              <img src="images/html5-logo/html5_device_access.svg" height="50">
-              Local Data
-            </h2>
-            <ul>
-              <li>
-                need example
-              </li>
+              <li>camera</li>
+              <li>microphone</li>
             </ul>
           </section>
         </section>
@@ -630,9 +630,10 @@
           <section>
             <h2>
               <img src="images/html5-logo/html5_offline_storage.svg" height="50">
-              Offline Storage
+              Storage
             </h2>
-            <a href="http://html5demos.com/storage-events">http://html5demos.com/storage-events</a>
+            <a href="http://html5demos.com/storage">storage</a>
+            <a href="http://html5demos.com/storage-events">storage-events</a>
           </section>
         </section>
 
@@ -777,17 +778,6 @@
         </section>
 
         <section>
-          <h2>Progressive Enhancement</h2>
-          <ul>
-            <li>
-              <a href="http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com/">Do web sites need to be experienced exactly the same in every
-              browser?</a>
-            </li>
-            <li>Consider what users will see using different browsers</li>
-          </ul>
-        </section>
-
-        <section>
           <section>
             <h2>border-radius</h2>
             <p>Allows you to create rounded corners</p>
@@ -821,7 +811,7 @@
               <input type="range" min="0" max="100" value="10">
             </p>
             <p>
-              <span><span class="border-radius-value">40</span>px on to right & bottom left</span>
+              <span><span class="border-radius-value">40</span>px on top right & bottom left</span>
               <input type="range" min="0" max="100" value="40">
             </p>
             <article>
@@ -893,6 +883,11 @@
 }
             </code></pre>
             <p>color property using (red, green, blue, opacity)</p>
+            <p>opacity is a decimal value from 0 to 1</p>
+            <ul>
+              <li>0 - not visible</li>
+              <li>1 - fully visible</li>
+            </ul>
           </section>
           <section>
             <h2>opacity</h2>
@@ -1000,19 +995,6 @@
           </section>
         </section>
 
-        <section class="multiple-backgrounds">
-          <section>
-            <h2>backgrounds</h2>
-            <p>CSS3 allows multiple background images</p>
-            <pre><code>.example {
-  background-image: url('../images/html5-features.png'),
-                    url('../images/sky.jpg');
-}</code></pre>
-            <div>
-            </div>
-          </section>
-        </section>
-
         <section>
           <section>
             <h2>gradients</h2>
@@ -1045,6 +1027,28 @@
           </section>
         </section>
 
+        <section>
+          <section>
+            <h2>Example: CSS3 Buttons</h2>
+            <a href="http://hellohappy.org/css3-buttons/">
+              <img src="images/screenshots/css3-buttons.png" />
+            </a>
+          </section>
+        </section>
+
+        <section class="multiple-backgrounds">
+          <section>
+            <h2>backgrounds</h2>
+            <p>CSS3 allows multiple background images</p>
+            <pre><code>.example {
+  background-image: url('../images/html5-features.png'),
+                    url('../images/sky.jpg');
+}</code></pre>
+            <div>
+            </div>
+          </section>
+        </section>
+
         <section data-state="activity">
           <section>
             <h2>Activity: Enhance a web site using HTML5 & CSS3</h2>
@@ -1056,7 +1060,7 @@
             <p>
               <ul>
                 <li>Tackle one small problem at a time</li>
-                <li>You have 10 minutes to get started</li>
+                <li>You have 15 minutes to get started</li>
                 <li>You won't be able to change everything - if we have time, you
                 can continue at the end of the workshop</li>
               </ul>
@@ -1078,11 +1082,9 @@
         <section>
           <section>
             <h2>Transitions</h2>
-            <ul>
-              <li>Allow property changes in CSS values to occur smoothly over a
-                specified duration</li>
-              <li>Can create some awesome effects without any JavaScript</li>
-            </ul>
+            <p>Allow property changes in CSS values to occur smoothly over a
+                specified duration</p>
+            <p class="fragment">Create some awesome effects without any JavaScript</p>
           </section>
           <section>
             <h2>Transition Triggers</h2>
@@ -1105,7 +1107,7 @@
           </section>
           <section>
             <h2>transition-property</h2>
-            <p>the names of CSS properties that should be transitions</p>
+            <p>the names of CSS properties that should be transitioned</p>
             <pre><code>
 .example1 { transition-property: background-color; }
             </code></pre>
@@ -1265,6 +1267,9 @@
           <section>
             <h2>Animations</h2>
             <p>animate transitions from one CSS style configuration to another</p>
+          </section>
+          <section>
+            <h2>Animations</h2>
             <p>
               <h4>Two Components</h4>
               <ol>
@@ -1286,7 +1291,8 @@
             </code></pre>
           </section>
           <section>
-            <h2>Benefits of CSS3 Animations (over JS)</h2>
+            <h2>Benefits of CSS3 Animations</h2>
+            <h4>Over JavaScript Animations</h4>
             <ul>
               <li>Easy for simple animations (no JavaScript required)</li>
               <li>Performance</li>
@@ -1297,13 +1303,6 @@
         <section>
           <section>
             <h2>Fonts</h2>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h2>CSS3 Button</h2>
-            <a href="http://hellohappy.org/css3-buttons/">examples</a>
           </section>
         </section>
 
@@ -1347,6 +1346,10 @@
             <img src="images/screenshots/html5-css3-readiness.png"/>
           </section>
           <section>
+            <h2><a href="http://html5please.com/">HTML5 Please</a></h2>
+            <img src="images/screenshots/html5-please.png"/>
+          </section>
+          <section>
             <img src="images/html5rocks.png"/>
             <p>
               <a href="http://www.html5rocks.com">http://www.html5rocks.com</a>
@@ -1379,7 +1382,6 @@
             <ul>
               <li>JavaScript library that detects HTML5 and CSS3 features in the
                 user’s browser</li>
-              <li>Feature detection</li>
               <li>Works well with polyfills - a piece of code (or plugin) that
                 provides the technology that you, the developer, expect the
                 browser to provide natively</li>
@@ -1405,8 +1407,8 @@
               <a href="http://www.initializr.com/">Initializr</a>
             </h2>
             <ul>
-              <li>HTML5 templates generator to help you getting started with a
-                new project based on HTML5 Boilerplate. </li>
+              <li>HTML5 templates generator to help you get started with a
+                new project based on HTML5 Boilerplate</li>
               <li>It generates for you a clean customizable template with just
                 what you need to start!</li>
             </ul>
