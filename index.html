@@ -1117,26 +1117,47 @@ input:checked + label {
           </section>
         </section>
 
-        <section>
-          <section>
-            <h2>shadows</h2>
-            <ul>
-              <li>text-shadow</li>
-              <li>box-shadow</li>
-            </ul>
-          </section>
+        <section class="box-shadow">
           <section>
             <h2>box-shadow</h2>
-            <pre><code>
-#example1 { box-shadow: 2px 2px 10px red; }
-
-#example2 { box-shadow: inset 2px 2px 10px red; }
-            </code></pre>
-            <article class="box-shadow">
-              <div class="example1"></div>
-              <div class="example2"></div>
-            </article>
+            <p>adds a drop shadow to an element</p>
           </section>
+          <section class="example1">
+            <h2>box-shadow</h2>
+            <p>box-shadow: offset-x offset-y color</p>
+            <pre><code>
+.example1 { box-shadow: 1px 1px red; }
+            </code></pre>
+            <p>
+              <label>offset-x:</label>
+              <input type="range" min="0" max="10" value="1">
+
+              <label>offset-y:</label>
+              <input type="range" min="0" max="10" value="1">
+            </p>
+            <div></div>
+          </section>
+
+          <section class="example2">
+            <h2>box-shadow</h2>
+            <p>box-shadow: offset-x offset-y blur spread color</p>
+            <pre><code>
+.example1 { box-shadow: 0 0 1px 1px red; }
+            </code></pre>
+            <p>
+              <label>inset:</label>
+              <input type="checkbox" >
+
+              <label>blur:</label>
+              <input type="range" min="0" max="10" value="1">
+
+              <label>spread:</label>
+              <input type="range" min="0" max="10" value="1">
+            </p>
+            <div></div>
+          </section>
+        </section>
+        <section>
           <section>
             <h2>text-shadow</h2>
             <pre><code>

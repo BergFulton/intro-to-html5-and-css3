@@ -288,47 +288,33 @@ article.rgba-opacity .example5.rgba {
   background-color: rgba(255, 0, 0, 0);
 }
 
-/* line 224, source/slides.scss */
-article.box-shadow {
-  font-size: 16px;
-  margin: 0 auto;
-  width: 700px;
-}
-/* line 229, source/slides.scss */
-article.box-shadow div {
-  border: solid 1px black;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
+/* line 225, source/slides.scss */
+.box-shadow div {
+  border: solid 2px black;
   height: 200px;
-  margin: 10px;
-  text-align: center;
+  margin: 0 auto;
   width: 200px;
 }
-/* line 238, source/slides.scss */
-article.box-shadow .example1 {
-  -webkit-box-shadow: 2px 2px 10px red;
-  -moz-box-shadow: 2px 2px 10px red;
-  box-shadow: 2px 2px 10px red;
-  float: left;
+/* line 232, source/slides.scss */
+.box-shadow .example1 div {
+  -webkit-box-shadow: 1px 1px red;
+  -moz-box-shadow: 1px 1px red;
+  box-shadow: 1px 1px red;
 }
-/* line 243, source/slides.scss */
-article.box-shadow .example2 {
-  -webkit-box-shadow: inset 2px 2px 10px red;
-  -moz-box-shadow: inset 2px 2px 10px red;
-  box-shadow: inset 2px 2px 10px red;
-  float: right;
+/* line 236, source/slides.scss */
+.box-shadow .example2 div {
+  -webkit-box-shadow: 0 0 1px 1px red;
+  -moz-box-shadow: 0 0 1px 1px red;
+  box-shadow: 0 0 1px 1px red;
 }
 
-/* line 250, source/slides.scss */
+/* line 242, source/slides.scss */
 article.text-shadow {
   font-size: 30px;
   margin: 0 auto;
   width: 700px;
 }
-/* line 255, source/slides.scss */
+/* line 247, source/slides.scss */
 article.text-shadow div {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -337,16 +323,16 @@ article.text-shadow div {
   border-radius: 10px;
   text-align: center;
 }
-/* line 260, source/slides.scss */
+/* line 252, source/slides.scss */
 article.text-shadow .example1 {
   text-shadow: 2px 2px 10px red;
 }
-/* line 264, source/slides.scss */
+/* line 256, source/slides.scss */
 article.text-shadow .example2 {
   text-shadow: 1px 1px 10px red, 10px 10px 10px orange, 15px 15px 10px yellow, 20px 20px 10px green, 25px 25px 10px blue, 30px 30px 10px purple;
 }
 
-/* line 272, source/slides.scss */
+/* line 264, source/slides.scss */
 .multiple-backgrounds div {
   background-image: url("../images/html5-features.png"), url("../images/sky.jpg");
   background-position: 50% 50%, 50% 50%;
@@ -356,13 +342,13 @@ article.text-shadow .example2 {
   width: 700px;
 }
 
-/* line 282, source/slides.scss */
+/* line 274, source/slides.scss */
 article.gradients {
   font-size: 30px;
   margin: 0 auto;
   width: 700px;
 }
-/* line 287, source/slides.scss */
+/* line 279, source/slides.scss */
 article.gradients div {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -376,7 +362,7 @@ article.gradients div {
   text-align: center;
   width: 200px;
 }
-/* line 297, source/slides.scss */
+/* line 289, source/slides.scss */
 article.gradients .linear-example1 {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
   background-image: -webkit-linear-gradient(#ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
@@ -384,7 +370,7 @@ article.gradients .linear-example1 {
   background-image: -o-linear-gradient(#ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   background-image: linear-gradient(#ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
 }
-/* line 302, source/slides.scss */
+/* line 294, source/slides.scss */
 article.gradients .linear-example2 {
   background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
   background-image: -webkit-linear-gradient(right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
@@ -392,7 +378,7 @@ article.gradients .linear-example2 {
   background-image: -o-linear-gradient(right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   background-image: linear-gradient(right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
 }
-/* line 307, source/slides.scss */
+/* line 299, source/slides.scss */
 article.gradients .linear-example3 {
   background-image: -webkit-gradient(linear, 100% 100%, 0% 0%, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
   background-image: -webkit-linear-gradient(bottom right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
@@ -400,7 +386,7 @@ article.gradients .linear-example3 {
   background-image: -o-linear-gradient(bottom right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   background-image: linear-gradient(bottom right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
 }
-/* line 313, source/slides.scss */
+/* line 305, source/slides.scss */
 article.gradients .radial-example1 {
   background-image: -webkit-gradient(radial, circle cover, 0, circle cover, 100, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
   background-image: -webkit-radial-gradient(circle cover, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
@@ -408,7 +394,7 @@ article.gradients .radial-example1 {
   background-image: -o-radial-gradient(circle cover, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   background-image: radial-gradient(circle cover, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
 }
-/* line 318, source/slides.scss */
+/* line 310, source/slides.scss */
 article.gradients .radial-example2 {
   background-image: -webkit-gradient(radial, 0 0, 0, 0 0, 100, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
   background-image: -webkit-radial-gradient(0 0, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
@@ -416,7 +402,7 @@ article.gradients .radial-example2 {
   background-image: -o-radial-gradient(0 0, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
   background-image: radial-gradient(0 0, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
 }
-/* line 323, source/slides.scss */
+/* line 315, source/slides.scss */
 article.gradients .radial-example3 {
   background-image: -webkit-gradient(radial, 0 50%, 0, 0 50%, 100, color-stop(0%, #ff0000), color-stop(16.66667%, #ffa500), color-stop(33.33333%, #ffff00), color-stop(50%, #008000), color-stop(66.66667%, #0000ff), color-stop(83.33333%, #4b0082), color-stop(100%, #ee82ee));
   background-image: -webkit-radial-gradient(0 50%, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
@@ -425,7 +411,7 @@ article.gradients .radial-example3 {
   background-image: radial-gradient(0 50%, circle, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
 }
 
-/* line 332, source/slides.scss */
+/* line 324, source/slides.scss */
 .transition-duration .example {
   border: solid 2px black;
   background-color: #cccccc;
@@ -441,7 +427,7 @@ article.gradients .radial-example3 {
   -o-transition-duration: 3s;
   transition-duration: 3s;
 }
-/* line 342, source/slides.scss */
+/* line 334, source/slides.scss */
 .transition-duration .example:hover {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -453,7 +439,7 @@ article.gradients .radial-example3 {
   width: 200px;
 }
 
-/* line 352, source/slides.scss */
+/* line 344, source/slides.scss */
 .transition-delay article {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -466,31 +452,31 @@ article.gradients .radial-example3 {
   position: relative;
   width: 400px;
 }
-/* line 361, source/slides.scss */
+/* line 353, source/slides.scss */
 .transition-delay article:hover div {
   background-color: red;
 }
-/* line 365, source/slides.scss */
+/* line 357, source/slides.scss */
 .transition-delay article:hover .example1 {
   left: 0;
   top: 0;
 }
-/* line 369, source/slides.scss */
+/* line 361, source/slides.scss */
 .transition-delay article:hover .example2 {
   left: 380px;
   top: 0;
 }
-/* line 373, source/slides.scss */
+/* line 365, source/slides.scss */
 .transition-delay article:hover .example3 {
   left: 380px;
   top: 180px;
 }
-/* line 377, source/slides.scss */
+/* line 369, source/slides.scss */
 .transition-delay article:hover .example4 {
   left: 0;
   top: 180px;
 }
-/* line 384, source/slides.scss */
+/* line 376, source/slides.scss */
 .transition-delay div {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -514,28 +500,28 @@ article.gradients .radial-example3 {
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 397, source/slides.scss */
+/* line 389, source/slides.scss */
 .transition-delay div.example1 {
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   -o-transition-delay: 0s;
   transition-delay: 0s;
 }
-/* line 400, source/slides.scss */
+/* line 392, source/slides.scss */
 .transition-delay div.example2 {
   -webkit-transition-delay: 1s;
   -moz-transition-delay: 1s;
   -o-transition-delay: 1s;
   transition-delay: 1s;
 }
-/* line 403, source/slides.scss */
+/* line 395, source/slides.scss */
 .transition-delay div.example3 {
   -webkit-transition-delay: 2s;
   -moz-transition-delay: 2s;
   -o-transition-delay: 2s;
   transition-delay: 2s;
 }
-/* line 406, source/slides.scss */
+/* line 398, source/slides.scss */
 .transition-delay div.example4 {
   -webkit-transition-delay: 3s;
   -moz-transition-delay: 3s;
@@ -543,17 +529,17 @@ article.gradients .radial-example3 {
   transition-delay: 3s;
 }
 
-/* line 414, source/slides.scss */
+/* line 406, source/slides.scss */
 .transition-timing-function article {
   margin: 0 auto;
   width: 600px;
 }
-/* line 418, source/slides.scss */
+/* line 410, source/slides.scss */
 .transition-timing-function article:hover div {
   background-color: red;
   width: 580px;
 }
-/* line 424, source/slides.scss */
+/* line 416, source/slides.scss */
 .transition-timing-function div {
   background-color: #cccccc;
   height: 20px;
@@ -572,42 +558,42 @@ article.gradients .radial-example3 {
   -o-transition-duration: 4s;
   transition-duration: 4s;
 }
-/* line 437, source/slides.scss */
+/* line 429, source/slides.scss */
 .transition-timing-function div.ease {
   -webkit-transition-timing-function: ease;
   -moz-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 440, source/slides.scss */
+/* line 432, source/slides.scss */
 .transition-timing-function div.linear {
   -webkit-transition-timing-function: linear;
   -moz-transition-timing-function: linear;
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 443, source/slides.scss */
+/* line 435, source/slides.scss */
 .transition-timing-function div.ease-in {
   -webkit-transition-timing-function: ease-in;
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 446, source/slides.scss */
+/* line 438, source/slides.scss */
 .transition-timing-function div.ease-out {
   -webkit-transition-timing-function: ease-out;
   -moz-transition-timing-function: ease-out;
   -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-/* line 449, source/slides.scss */
+/* line 441, source/slides.scss */
 .transition-timing-function div.ease-in-out {
   -webkit-transition-timing-function: ease-in-out;
   -moz-transition-timing-function: ease-in-out;
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 452, source/slides.scss */
+/* line 444, source/slides.scss */
 .transition-timing-function div.cubic-bezier {
   -webkit-transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
   -moz-transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
@@ -615,7 +601,7 @@ article.gradients .radial-example3 {
   transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
 }
 
-/* line 459, source/slides.scss */
+/* line 451, source/slides.scss */
 article.transform-scale {
   margin: 0 auto;
   padding: 100px;
@@ -623,7 +609,7 @@ article.transform-scale {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 466, source/slides.scss */
+/* line 458, source/slides.scss */
 article.transform-scale div {
   background-color: #cccccc;
   border: solid 2px #000;
@@ -635,7 +621,7 @@ article.transform-scale div {
   text-align: center;
   width: 100px;
 }
-/* line 478, source/slides.scss */
+/* line 470, source/slides.scss */
 article.transform-scale .example1:hover {
   -webkit-transform: scale(2);
   -moz-transform: scale(2);
@@ -643,7 +629,7 @@ article.transform-scale .example1:hover {
   -o-transform: scale(2);
   transform: scale(2);
 }
-/* line 482, source/slides.scss */
+/* line 474, source/slides.scss */
 article.transform-scale .example2:hover {
   -webkit-transform: scale(0.5);
   -moz-transform: scale(0.5);
@@ -651,11 +637,11 @@ article.transform-scale .example2:hover {
   -o-transform: scale(0.5);
   transform: scale(0.5);
 }
-/* line 486, source/slides.scss */
+/* line 478, source/slides.scss */
 article.transform-scale .example3, article.transform-scale .example4 {
   float: right;
 }
-/* line 489, source/slides.scss */
+/* line 481, source/slides.scss */
 article.transform-scale .example3:hover {
   -webkit-transform: scale(0.5, 1);
   -moz-transform: scale(0.5, 1);
@@ -663,7 +649,7 @@ article.transform-scale .example3:hover {
   -o-transform: scale(0.5, 1);
   transform: scale(0.5, 1);
 }
-/* line 493, source/slides.scss */
+/* line 485, source/slides.scss */
 article.transform-scale .example4:hover {
   -webkit-transform: scale(1, 0.5);
   -moz-transform: scale(1, 0.5);
@@ -672,7 +658,7 @@ article.transform-scale .example4:hover {
   transform: scale(1, 0.5);
 }
 
-/* line 499, source/slides.scss */
+/* line 491, source/slides.scss */
 article.transform-rotate {
   margin: 0 auto;
   padding: 100px;
@@ -680,7 +666,7 @@ article.transform-rotate {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 506, source/slides.scss */
+/* line 498, source/slides.scss */
 article.transform-rotate div {
   background-color: #cccccc;
   border: solid 2px black;
@@ -692,7 +678,7 @@ article.transform-rotate div {
   text-align: center;
   width: 120px;
 }
-/* line 518, source/slides.scss */
+/* line 510, source/slides.scss */
 article.transform-rotate .example1:hover {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -700,7 +686,7 @@ article.transform-rotate .example1:hover {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 521, source/slides.scss */
+/* line 513, source/slides.scss */
 article.transform-rotate .example2:hover {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -708,7 +694,7 @@ article.transform-rotate .example2:hover {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 524, source/slides.scss */
+/* line 516, source/slides.scss */
 article.transform-rotate .example3:hover {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -716,7 +702,7 @@ article.transform-rotate .example3:hover {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 527, source/slides.scss */
+/* line 519, source/slides.scss */
 article.transform-rotate .example4:hover {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -725,7 +711,7 @@ article.transform-rotate .example4:hover {
   transform: rotate(180deg);
 }
 
-/* line 533, source/slides.scss */
+/* line 525, source/slides.scss */
 article.transform-translate {
   margin: 0 auto;
   padding: 100px;
@@ -733,7 +719,7 @@ article.transform-translate {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 540, source/slides.scss */
+/* line 532, source/slides.scss */
 article.transform-translate div {
   background-color: #cccccc;
   border: solid 2px black;
@@ -745,7 +731,7 @@ article.transform-translate div {
   text-align: center;
   width: 170px;
 }
-/* line 552, source/slides.scss */
+/* line 544, source/slides.scss */
 article.transform-translate .example1:hover {
   -webkit-transform: translate(20px);
   -moz-transform: translate(20px);
@@ -753,7 +739,7 @@ article.transform-translate .example1:hover {
   -o-transform: translate(20px);
   transform: translate(20px);
 }
-/* line 555, source/slides.scss */
+/* line 547, source/slides.scss */
 article.transform-translate .example2:hover {
   -webkit-transform: translate(0, 20px);
   -moz-transform: translate(0, 20px);
@@ -761,7 +747,7 @@ article.transform-translate .example2:hover {
   -o-transform: translate(0, 20px);
   transform: translate(0, 20px);
 }
-/* line 559, source/slides.scss */
+/* line 551, source/slides.scss */
 article.transform-translate .example3:hover {
   -webkit-transform: translate(-20px, 20px);
   -moz-transform: translate(-20px, 20px);
@@ -770,7 +756,7 @@ article.transform-translate .example3:hover {
   transform: translate(-20px, 20px);
 }
 
-/* line 564, source/slides.scss */
+/* line 556, source/slides.scss */
 article.transform-origin {
   margin: 0 auto;
   padding: 100px;
@@ -778,7 +764,7 @@ article.transform-origin {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 571, source/slides.scss */
+/* line 563, source/slides.scss */
 article.transform-origin div {
   background-color: #cccccc;
   border: solid 2px black;
@@ -790,7 +776,7 @@ article.transform-origin div {
   text-align: center;
   width: 180px;
 }
-/* line 582, source/slides.scss */
+/* line 574, source/slides.scss */
 article.transform-origin div:hover {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -798,7 +784,7 @@ article.transform-origin div:hover {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 587, source/slides.scss */
+/* line 579, source/slides.scss */
 article.transform-origin .example1 {
   -webkit-transform-origin: top left;
   -moz-transform-origin: top left;
@@ -806,7 +792,7 @@ article.transform-origin .example1 {
   -o-transform-origin: top left;
   transform-origin: top left;
 }
-/* line 591, source/slides.scss */
+/* line 583, source/slides.scss */
 article.transform-origin .example2 {
   -webkit-transform-origin: center center;
   -moz-transform-origin: center center;
@@ -814,7 +800,7 @@ article.transform-origin .example2 {
   -o-transform-origin: center center;
   transform-origin: center center;
 }
-/* line 595, source/slides.scss */
+/* line 587, source/slides.scss */
 article.transform-origin .example3 {
   -webkit-transform-origin: 0 50px;
   -moz-transform-origin: 0 50px;
@@ -823,7 +809,7 @@ article.transform-origin .example3 {
   transform-origin: 0 50px;
 }
 
-/* line 602, source/slides.scss */
+/* line 594, source/slides.scss */
 .media-queries .example {
   height: 100px;
   margin: 0 auto;
@@ -831,13 +817,13 @@ article.transform-origin .example3 {
   background-color: grey;
 }
 @media screen and (min-width: 300px) and (max-width: 600px) {
-  /* line 602, source/slides.scss */
+  /* line 594, source/slides.scss */
   .media-queries .example {
     background-color: red;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
-  /* line 602, source/slides.scss */
+  /* line 594, source/slides.scss */
   .media-queries .example {
     background-color: blue;
   }

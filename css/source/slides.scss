@@ -221,28 +221,20 @@ article.rgba-opacity {
   @include rgba-opacity-example(5, 0);
 }
 
-article.box-shadow {
-  font-size: 16px;
-  margin: 0 auto;
-  width: 700px;
-
+.box-shadow {
   div {
-    border: solid 1px black;
-    @include border-radius(10px);
+    border: solid 2px black;
     height: 200px;
-    margin: 10px;
-    text-align: center;
+    margin: 0 auto;
     width: 200px;
   }
 
-  .example1 {
-    @include box-shadow(2px 2px 10px red);
-    float: left;
+  .example1 div {
+    @include box-shadow(1px 1px red);
   }
 
-  .example2 {
-    @include box-shadow(inset 2px 2px 10px red);
-    float: right;
+  .example2 div {
+    @include box-shadow(0 0 1px 1px red);
   }
 }
 
