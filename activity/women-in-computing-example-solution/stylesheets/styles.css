@@ -81,6 +81,7 @@ nav li a {
   text-decoration: none;
 }
 nav li a:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   color: #FB000D;
 }
 
@@ -141,6 +142,13 @@ header:after {
 #main section {
   margin-bottom: 1em;
   position: relative;
+}
+
+#main section:after {
+  /* clearfix hack */
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -254,7 +262,7 @@ header:after {
 
 /* Footer */
 footer {
-  background-color: #00665F;
+  background-image: -webkit-linear-gradient(#00665F, #1D766F, #00665F);
 }
 
 footer nav {

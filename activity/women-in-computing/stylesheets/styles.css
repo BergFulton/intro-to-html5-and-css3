@@ -125,6 +125,13 @@ h4 {
   position: relative;
 }
 
+#main section:after {
+  /* clearfix hack */
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 /* Famous Women */
 #famous div {
