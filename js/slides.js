@@ -25,4 +25,13 @@ $(document).ready(function() {
     parent.find("p .value").text(new_value);
     parent.find(".example").css("transition-duration", new_value + "s");
   });
+
+  $(".nth-child-table").on("click", "input[type='button']", function() {
+    var parent     = $(this).parents(".nth-child-table"),
+        new_value  = parent.find("input[type='text']").val(),
+        rows       = parent.find("tbody tr:nth-child(" + new_value + ")");
+
+    parent.find("tbody tr").css("background-color", "");
+    rows.css("background-color", "red");
+  });
 });

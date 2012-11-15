@@ -41,8 +41,15 @@ $browsers: (chrome, firefox, ie, webkit, opera);
 
 
 .attribute-selectors {
+  article {
+    font-size: 0.9em;
+    margin: 0 auto;
+    width: $example-width;
+    @include clearfix;
+  }
+
   div {
-    width: 220px;
+    width: 200px;
     height: 100px;
     line-height: 100px;
     margin: 10px;
@@ -93,6 +100,41 @@ $browsers: (chrome, firefox, ie, webkit, opera);
   }
 }
 
+.reveal .nth-child-table {
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 0.5em;
+    width: 80%;
+  }
+  th {
+    background-color: #CCC;
+    font-weight: bold;
+  }
+  th, td {
+    border: solid 1px black;
+    padding: 0;
+    text-align: center;
+    width: 14%;
+  }
+}
+
+
+.pseudo-enabled {
+  input:enabled {
+    background-color: red;
+  }
+
+  input:disabled {
+    background-color: grey;
+  }
+}
+
+.pseudo-checked {
+  input:checked + label {
+    color: red;
+  }
+}
 
 .border-radius {
 

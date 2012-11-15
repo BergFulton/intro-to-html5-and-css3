@@ -162,7 +162,7 @@ header:after {
   opacity: 1;
 }
 
-#famous article:nth-child(4n+4) {
+#famous article:nth-child(4n) {
   clear: both;
 }
 

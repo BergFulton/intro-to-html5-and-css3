@@ -167,7 +167,9 @@
             <h2><a href="http://html5please.com/">HTML5 Please</a></h2>
             <img src="images/screenshots/html5-please.png"/>
           </section>
+        </section>
 
+        <section>
           <section>
             <p><a href="http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com/">Do web sites need to be experienced exactly the same in every
                 browser?</a></p>
@@ -702,9 +704,9 @@
           <section>
             <h2>Attribute Selectors</h2>
             <ul>
-              <li><strong>E[foo^="bar"]</strong> an E element whose "foo" attribute value begins exactly with the string "bar"</li>
-              <li><strong>E[foo$="bar"]</strong> an E element whose "foo" attribute value ends exactly with the string "bar"</li>
-              <li><strong>E[foo*="bar"]</strong> an E element whose "foo" attribute value contains the substring "bar"</li>
+              <li><strong>E[foo^="bar"]</strong> an element whose "foo" attribute value begins exactly with the string "bar"</li>
+              <li><strong>E[foo$="bar"]</strong> an element whose "foo" attribute value ends exactly with the string "bar"</li>
+              <li><strong>E[foo*="bar"]</strong> an element whose "foo" attribute value contains the substring "bar"</li>
             </ul>
           </section>
 
@@ -729,75 +731,131 @@
           </section>
         </section>
 
-
         <section>
           <section>
-            <h2>Pseudo-class Selectors</h2>
+            <h2>:nth-child pseudo-class selector</h2>
+            <p>matches an element that has position <em>an+b</em></p>
+            <pre><code class="css">
+element:nth-child(an + b) { style properties }
+            </code></pre>
+            <h4>some examples</h4>
             <ul>
-              <li>E:root  an E element, root of the document</li>
-              <li>E:nth-child(n)  an E element, the n-th child of its parent</li>
-              <li>E:nth-last-child(n) an E element, the n-th child of its parent, counting from the last one</li>
-              <li>E:last-child  an E element, last child of its parent</li>
-              <li>E:only-child  an E element, only child of its parent</li>
-              <li>E:empty an E element that has no children (including text nodes)</li>
+              <li><strong>3</strong> - selects the third element</li>
+              <li><strong>4n</strong> - selects every fourth element</li>
+              <li><strong>even</strong> - selects even elements</li>
+              <li><strong>odd</strong> - selects odd elements</li>
             </ul>
           </section>
 
-          <section class="nth-child">
-            <h2>Use nth-child to make a grid</h2>
-            <pre><code>tr:nth-child(even) {
-    td:nth-child(even) { background-color: black; }
-    td:nth-child(odd) { background-color: white; }
-  }
-
-  tr:nth-child(odd) {
-    td:nth-child(even) { background-color: white; }
-    td:nth-child(odd) { background-color: black; }
-  }</code></pre>
+          <section class="nth-child-table">
+            <h2>:nth-child</h2>
+            <pre><code>
+tbody tr:nth-child(an + b) { backround-color: red; }
+            </code></pre>
+            <p>
+              <input type="text" id="nth-child-value" value="" />
+              <input type="button" value="change"/>
+            </p>
             <table>
-              <tr>
-                <td></td><td></td><td></td><td></td>
-              </tr>
-              <tr>
-                <td></td><td></td><td></td><td></td>
-              </tr>
-              <tr>
-                <td></td><td></td><td></td><td></td>
-              </tr>
-              <tr>
-                <td></td><td></td><td></td><td></td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>n</th>
+                  <th>2n+1</th><th>4n+1</th><th>4n+4</th>
+                  <th>4n  </th><th>5n-2</th><th>-n+3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>0 </th>
+                  <td>1 </td><td>1 </td><td>4 </td>
+                  <td>- </td><td>- </td><td>3 </td>
+                </tr>
+                <tr>
+                  <th>1 </th>
+                  <td>3 </td><td>5 </td><td>8 </td>
+                  <td>4</td><td>3</td><td>2</td>
+                </tr>
+                <tr>
+                  <th>2 </th>
+                  <td>5 </td><td>9 </td><td>12</td>
+                  <td>8</td><td>8</td><td>1</td>
+                </tr>
+                <tr>
+                  <th>3 </th>
+                  <td>7 </td><td>13</td><td>16</td>
+                  <td>12</td><td>13</td><td>- </td>
+                </tr>
+                <tr>
+                  <th>4 </th>
+                  <td>9 </td><td>17</td><td>20</td>
+                  <td>16</td><td>18</td><td>- </td>
+                </tr>
+                <tr>
+                  <th>5 </th>
+                  <td>11</td><td>21</td><td>24</td>
+                  <td>20</td><td>23</td><td>- </td>
+                </tr>
+              </tbody>
             </table>
+            <a href="http://css-tricks.com/how-nth-child-works/">reference</a>
           </section>
         </section>
 
 
         <section>
-          <h2>Pseudo-class Selectors</h2>
-          <ul>
-            <li>E:nth-of-type(n)  an E element, the n-th sibling of its type</li>
-            <li>E:nth-last-of-type(n) an E element, the n-th sibling of its type, counting from the last one</li>
-            <li>E:first-of-type an E element, first sibling of its type</li>
-            <li>E:last-of-type  an E element, last sibling of its type</li>
-            <li>E:only-of-type  an E element, only sibling of its type</li>
-          </ul>
-        </section>
+          <section>
+            <h2>Some other pseudo-class Selectors</h2>
+            <ul>
+              <li>
+                <strong>E:last-child</strong> an element, last child of its parent
+              </li>
+              <li>
+                <strong>E:only-child</strong> an element, only child of its parent
+              </li>
+              <li>
+                <strong>E:empty</strong> an element that has no children (including text nodes)
+              </li>
+              <li>
+                <strong>E:not</strong> an element that does not match simple selector
+              </li>
+            </ul>
+          </section>
 
-        <section>
-          <h2>Pseudo-class Selectors</h2>
-          <ul>
-            <li>E:target  an E element being the target of the referring URI</li>
-            <li>E:enabled E:disabled  a user interface element E which is enabled or disabled</li>
-            <li>E:checked a user interface element E which is checked (for instance a radio-button or checkbox)</li>
-            <li>E:not(s)  an E element that does not match simple selector</li>
-          </ul>
-        </section>
+          <section class="pseudo-enabled">
+            <h2>:enabled & :disabled</h2>
+            <p>a user interface element which is enabled</p>
+            <pre><code>
+input:enabled { background-color: red; }
 
-        <section>
-          <h2>Sibling Selectors</h2>
-          <ul>
-            <li>E ~ F an F element preceded by an E element</li>
-          </ul>
+input:disabled { background-color: grey; }
+            </code></pre>
+            Enabled: <input type="textbox"/>
+            Disabled: <input type="textbox" disabled/>
+          </section>
+
+          <section class="pseudo-checked">
+            <h2>:checked</h2>
+            <p>a user interface element which is checked</p>
+            <pre><code>
+input:checked + label {
+  color: red;
+}
+            </code></pre>
+            <p>
+              <input type="checkbox" id="checkbox1">
+              <label for="checkbox1">checkbox</label>
+            </p>
+            <p>
+              <input type="radio" name="radio" id="radio1" />
+              <label for="radio1">radio</label>
+
+              <input type="radio" name="radio" id="radio2" />
+              <label for="radio2">radio</label>
+
+              <input type="radio" name="radio" id="radio3" />
+              <label for="radio3">radio</label>
+            </p>
+          </section>
         </section>
 
         <section data-state="activity">
@@ -820,12 +878,12 @@
           <section>
             <h2>Example solutions</h2>
             <pre><code>
-#famous article:nth-child(4n+4) {
+#famous article:nth-child(4n) {
   clear: both;
 }
             </code></pre>
             <pre><code>
-#famous div:nth-child(4n+4) {
+#famous div:nth-child(4n) {
   clear: both;
 }
             </code></pre>
@@ -1200,10 +1258,10 @@
           <section>
             <h2>Transition Triggers</h2>
             <ul>
+              <li><strong>Hover</strong></li>
               <li>Mouse click</li>
               <li>Focus state</li>
               <li>Active state</li>
-              <li>Hover</li>
               <li>Changes to the element</li>
             </ul>
           </section>
