@@ -1184,13 +1184,19 @@ input:checked + label {
         <section>
           <section>
             <h2>gradients</h2>
-            <ul>
-              <li>Build a gradient with css</li>
-              <li>examples</li>
-            </ul>
+            <p>Build gradients with css</p>
           </section>
           <section>
             <h2>linear gradients</h2>
+            <pre><code class="css">.linear-example1 {
+  background-image(linear-gradient(red, orange, yellow, green, blue, indigo, violet));
+}
+.linear-example2 {
+  background-image(linear-gradient(right, red, orange, yellow, green, blue, indigo, violet));
+}
+.linear-example3 {
+  background-image(linear-gradient(bottom right, red, orange, yellow, green, blue, indigo, violet));
+}</code></pre>
             <article class="gradients">
               <div class="linear-example1">
               </div>
@@ -1202,6 +1208,15 @@ input:checked + label {
           </section>
           <section>
             <h2>radial gradients</h2>
+            <pre><code>.radial-example1 {
+    background-image(radial-gradient(circle cover, red, orange, yellow, green, blue, indigo, violet));
+  }
+  .radial-example2 {
+    background-image(radial-gradient(0 0, circle, red, orange, yellow, green, blue, indigo, violet));
+  }
+  .radial-example3 {
+    background-image(radial-gradient(0 50%, circle, red, orange, yellow, green, blue, indigo, violet));
+  }</code></pre>
             <article class="gradients">
               <div class="radial-example1">
               </div>
@@ -1210,6 +1225,10 @@ input:checked + label {
               <div class="radial-example3">
               </div>
             </article>
+          </section>
+          <section>
+            <h2>gradients</h2>
+            <a href="http://www.colorzilla.com/gradient-editor/">Gradient Editor</a>
           </section>
         </section>
 
@@ -1233,6 +1252,11 @@ input:checked + label {
             <div>
             </div>
           </section>
+        </section>
+
+        <section>
+          <h2>Shiny CSS3 Features</h2>
+          <h3>Use in Moderation</h3>
         </section>
 
         <section data-state="activity">
@@ -1361,6 +1385,7 @@ input:checked + label {
               <div class="ease-in-out">ease-in-out</div>
               <div class="cubic-bezier">cubic-bezier</div>
             </article>
+            <a href="http://cubic-bezier.com/">cubic-bezier</a>
           </section>
         </section>
 
