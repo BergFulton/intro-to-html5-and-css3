@@ -154,6 +154,7 @@ h4 {
   height: 100%;
 }
 
+
 /* Organizations */
 #organizations {
   clear: both;
@@ -234,6 +235,7 @@ h4 {
   display: table;
   clear: both;
 }
+
 
 /* Fonts */
 @font-face {
