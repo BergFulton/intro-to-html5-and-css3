@@ -62,7 +62,9 @@ $(document).ready(function() {
     if(parent.find("input[type='checkbox']:checked").length) {
       setting += "inset ";
 
-      parent.find("pre span.value").prepend("<span class='temp'> inset</span>");
+      if(!parent.find("pre span.value span.temp").length) {
+        parent.find("pre span.value").prepend("<span class='temp'> inset</span>");
+      }
     }
     else {
       parent.find("pre span.value span.temp").remove();
