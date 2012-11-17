@@ -222,6 +222,7 @@ header:after {
 }
 
 #organizations img {
+  border-radius: 20px;
   position: absolute;
   right: 20px;
   top: 0;
@@ -246,6 +247,11 @@ header:after {
   line-height: 1.3em;
   margin-bottom: 1em;
   padding-left: 5px;
+  -webkit-transition: background-color 1s;
+}
+#facts ul li:hover {
+  background-color: #fff;
+  border-radius: 10px;
 }
 #facts ul li:before {
   color: #FFA700;
